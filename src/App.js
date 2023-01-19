@@ -1,11 +1,11 @@
-import './App.css';
+import Home from "./Pages/Home";
 
-function App() {
+const App = () => {
   return (
-    <div>
-     
+    <div className=' bg-[#111A28]'>
+      <Home />
     </div>
   );
-}
+};
 
 export default App;

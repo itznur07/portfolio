@@ -5,6 +5,11 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+/* main color */
+
+/* #0EB761 */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
