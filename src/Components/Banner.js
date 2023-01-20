@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineLine } from "react-icons/ai";
+import MentionButton from './MentionButton'
 import {
   FaGithub,
   FaInstagram,
@@ -14,7 +14,7 @@ import Icon from "./Icon";
 const Banner = () => {
   return (
     <>
-      <div className='w-full h-screen mx-24 flex items-center gap-20'>
+      <div className='h-screen flex items-center gap-20 mx-24'>
         <div className='flex flex-col gap-y-16 items-center '>
           <div className='flex flex-col gap-6 text-xl text-[#0eb761] cursor-pointer'>
             <Icon icon={<FaGithub />} link={`https://github.com/itznur07`} />
@@ -29,10 +29,7 @@ const Banner = () => {
               link={`https://www.instagram.com/itznur07/`}
             />
           </div>
-          <div className='flex items-center gap-y-2 -rotate-90 text-xl text-[#0eb761] font-medium'>
-            <span>SOCIAL</span>
-            <AiOutlineLine />{" "}
-          </div>
+          <MentionButton name="social"/>
         </div>
         <div className='flex flex-col gap-2'>
           <p className='text-xl font-medium text-[#0eb761]'>Hello I'm</p>
