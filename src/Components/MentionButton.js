@@ -1,13 +1,14 @@
-import React from 'react'
-import { AiOutlineLine } from 'react-icons/ai'
+import React from "react";
+import { AiOutlineLine } from "react-icons/ai";
 
-const MentionButton = ({name}) => {
+const MentionButton = ({ name }) => {
   return (
-    <div className='flex items-center gap-y-2 -rotate-90 text-xl text-[#0eb761] font-medium'>
-            <span>{name}</span>
-            <AiOutlineLine />{" "}
+    <div className='flex items-center gap-y-2 md:-rotate-90 text-xl text-[#0eb761] font-medium'>
+      <AiOutlineLine />
+      <span className='uppercase'>{name}</span>
+      <AiOutlineLine />{" "}
     </div>
-  )
-}
+  );
+};
 
-export default MentionButton
+export default MentionButton;
