@@ -4,6 +4,7 @@ import Banner from "../Components/Banner";
 import LoveToDo from "../Components/LoveToDo";
 import MySkill from "../Components/MySkill";
 import Navbar from "../Components/Navbar";
+import Protfolio from "../Components/Protfolio";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <About />
         <MySkill />
         <LoveToDo />
+        <Protfolio />
       </div>
     </>
   );
