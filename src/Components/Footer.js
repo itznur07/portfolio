@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineFork } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
+import ScrollToTopButton from "./ScrollToTop";
 
 const Footer = () => {
   return (
@@ -36,7 +37,7 @@ const Footer = () => {
                 <span className='uppercase'>Fork</span>
               </a>
             </div>
-            <div>^</div>
+            <div><ScrollToTopButton /></div>
           </div>
           {/* div 2 */}
         </div>
