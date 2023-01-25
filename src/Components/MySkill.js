@@ -5,10 +5,10 @@ import MentionButton from "./MentionButton";
 // import icons
 import { FaReact } from "react-icons/fa";
 import {
-    SiExpress,
-    SiMaterialui,
-    SiMongodb,
-    SiTailwindcss
+  SiExpress,
+  SiMaterialui,
+  SiMongodb,
+  SiTailwindcss
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
