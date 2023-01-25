@@ -1,3 +1,4 @@
+import { motion, useScroll } from "framer-motion";
 import React from "react";
 import About from "../Components/About";
 import Banner from "../Components/Banner";
@@ -9,9 +10,14 @@ import Navbar from "../Components/Navbar";
 import Protfolio from "../Components/Protfolio";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <>
-      <div className="">
+      <div>
+        <motion.div
+          className='progress-bar'
+          style={{ scaleX: scrollYProgress }}
+        />
         <Navbar />
         <Banner />
         <About />
