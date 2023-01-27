@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import myImg from '../assets/img/my-img.png';
+import { ColorContext } from "../context/GlobalState";
 import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 const About = () => {
+
+  const { color } = useContext(ColorContext);
+
+
   return (
     <div className='container mx-auto'>
       <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-24 mx-5 md:gap-y-0 gap-y-10 py-10'>
@@ -15,8 +20,8 @@ const About = () => {
             Application using Javascript Frontend Framework{" "}
           </p>
           <div className='flex space-x-5'>
-            <Button name='Get resume' style={`bg-[#0eb761]`} />
-            <Button name='My Skills' style={`border border-[#0eb761]`} />
+            <Button name='Get resume' cstyle={`bg-[${color}]`} />
+            <Button name='My Skills' cstyle={`border border-[${color}]`} />
           </div>
         </div>
         {/* div 1 */}

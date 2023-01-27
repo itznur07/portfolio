@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ColorContext } from "../context/GlobalState";
 import Button from "./Button";
 
 const Navbar = () => {
+  const { color } = useContext(ColorContext);
+
   return (
     <div className='container mx-auto'>
       <div className='md:flex md:flex-row md:justify-between items-center flex flex-col md:gap-y-0 gap-y-7 justify-center md:mx-24 mx-10 md:py-6 py-5'>
         {/* div 1 */}
         <div>
-          <span className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full bg-[#0eb761]'>
+          <span
+            className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full'
+            style={{ backgroundColor: color }}
+          >
             N
           </span>
         </div>
@@ -31,7 +37,7 @@ const Navbar = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <Button name='Resume' style={`border border-[#0eb761]`} />
+            <Button name='Resume' cstyle={`border border-[${color}]`} />
           </a>
         </div>
         {/* div 3 */}

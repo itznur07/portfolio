@@ -1,7 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { ColorContext } from "../context/GlobalState";
 
 function ScrollToTopButton() {
+  
+  const { color } = useContext(ColorContext);
+
   const [visibility, setVisibility] = useState(false);
 
   useEffect(() => {
@@ -23,13 +27,13 @@ function ScrollToTopButton() {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
   return (
+    
     <div className='animate-bounce'>
       <button
-        className='bg-[#0db760] text-[#fff] text-xl rounded-full px-2 py-2'
+        className=' text-[#fff] text-xl rounded-full px-2 py-2'
         onClick={handleClick}
-        style={{ visibility: visibility ? "visible" : "hidden" }}
+        style={{ visibility: visibility ? "visible" : "hidden", backgroundColor: color }}
       >
         <AiOutlineArrowUp />
       </button>

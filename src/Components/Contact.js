@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ColorContext } from "../context/GlobalState";
 import Button from "./Button";
 
 // import icons
 import MentionButton from "./MentionButton";
 
 const Contact = () => {
+  const { color } = useContext(ColorContext);
+
   return (
     <>
       <div className='cotainer mx-auto'>
@@ -12,11 +15,15 @@ const Contact = () => {
           {/* div 1 */}
           <div className='space-y-4 md:mt-0 mt-5'>
             <div className='md:space-y-2'>
-              <h1 className='text-xl text-[#0eb761] font-bold'>Email</h1>
+              <h1 style={{ color: color }} className='text-xl font-bold'>
+                Email
+              </h1>
               <p className='text-[#ddd] text-md'>nuruddinalways99@gmail.com</p>
             </div>
             <div className='md:space-y-2'>
-              <h1 className='text-xl text-[#0eb761] font-bold'>Linkedin</h1>
+              <h1 style={{ color: color }} className='text-xl  font-bold'>
+                Linkedin
+              </h1>
               <p className='text-[#ddd] text-md'>
                 <a
                   href='https://www.linkedin.com/in/itznur07/'
@@ -28,7 +35,9 @@ const Contact = () => {
               </p>
             </div>
             <div className='md:space-y-2'>
-              <h1 className='text-xl text-[#0eb761] font-bold'>Address</h1>
+              <h1 style={{ color: color }} className='text-xl font-bold'>
+                Address
+              </h1>
               <p className='text-[#ddd] text-md'>Chittagong, Bangladesh</p>
             </div>
           </div>
@@ -39,34 +48,38 @@ const Contact = () => {
               <div className='md:flex items-center md:gap-x-5 md:gap-y-4'>
                 <div className='space-y-4'>
                   <input
-                    className='border border-[#0eb761] outline-none px-3 py-2 rounded'
+                    style={{ borderColor: color }}
+                    className='border  outline-none px-3 py-2 rounded'
                     type='text'
                     placeholder='Your Name'
                   />
                   <br />
                   <input
-                    className='border border-[#0eb761] outline-none px-3 py-2 rounded'
+                    style={{ borderColor: color }}
+                    className='border  outline-none px-3 py-2 rounded'
                     type='text'
                     placeholder='Your Email'
                   />
                   <br />
                   <input
-                    className='border border-[#0eb761] outline-none px-3 py-2 rounded'
+                    style={{ borderColor: color }}
+                    className='border  outline-none px-3 py-2 rounded'
                     type='text'
                     placeholder='Subject'
                   />
                 </div>
                 <div>
                   <textarea
-                    className='md:mt-0 mt-3 border border-[#0eb761] outline-none px-3 py-1.5 rounded'
+                    style={{ borderColor: color }}
+                    className='md:mt-0 mt-3 border outline-none px-3 py-1.5 rounded'
                     cols='23'
                     rows='6'
                     placeholder='Message'
                   ></textarea>
                 </div>
               </div>
-              <div className="md:mt-3 mt-2">
-                <Button name='Send' style={`bg-[#0eb761] text-md`} />
+              <div className='md:mt-3 mt-2'>
+                <Button name='Send' style={`bg-[${color}] text-md`} />
               </div>
             </form>
           </div>

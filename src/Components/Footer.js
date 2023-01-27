@@ -3,6 +3,7 @@ import { AiOutlineFork } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
 import ScrollToTopButton from "./ScrollToTop";
 
+
 const Footer = () => {
   return (
     <>

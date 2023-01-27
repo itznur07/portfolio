@@ -1,5 +1,5 @@
 import { motion, useScroll } from "framer-motion";
-import React from "react";
+import React, { useContext } from "react";
 import About from "../Components/About";
 import Banner from "../Components/Banner";
 import Contact from "../Components/Contact";
@@ -8,15 +8,19 @@ import LoveToDo from "../Components/LoveToDo";
 import MySkill from "../Components/MySkill";
 import Navbar from "../Components/Navbar";
 import Protfolio from "../Components/Protfolio";
+import Theme from "../Components/Theme";
+import { ColorContext } from "../context/GlobalState";
 
 const Home = () => {
+  const { color } = useContext(ColorContext);
+
   const { scrollYProgress } = useScroll();
   return (
     <>
       <div>
         <motion.div
           className='progress-bar'
-          style={{ scaleX: scrollYProgress }}
+          style={{ scaleX: scrollYProgress, backgroundColor: color }}
         />
         <Navbar />
         <Banner />
@@ -26,6 +30,7 @@ const Home = () => {
         <Protfolio />
         <Contact />
         <Footer />
+        <Theme />
       </div>
     </>
   );
