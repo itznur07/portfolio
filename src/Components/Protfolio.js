@@ -89,7 +89,12 @@ const Protfolio = () => {
   );
 };
 
-// todo card
+
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 const Card = ({ img, name, describe, tags, repolink, livelink }) => {
 
   const { color } = useContext(ColorContext);
