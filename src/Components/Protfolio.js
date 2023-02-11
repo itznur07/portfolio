@@ -107,7 +107,7 @@ const Card = ({ img, name, describe, tags, repolink, livelink }) => {
           <img
             className='grayscale group-hover:grayscale-0 transition ease-linear duration-200'
             src={img}
-            alt=''
+            alt='images'
           />
         </span>
         <h1 style={{color: color}} className='text-2xl  group-hover:text-black font-semibold'>
