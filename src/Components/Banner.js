@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import {
   FaGithub,
   FaInstagram,
@@ -6,13 +6,13 @@ import {
   FaMedium,
   FaTwitter
 } from "react-icons/fa";
-import { ColorContext } from "../context/GlobalState";
+import { useSelector } from "react-redux";
 import Button from "./Button";
 import Icon from "./Icon";
 import MentionButton from "./MentionButton";
 
 const Banner = () => {
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   return (
     <div className='container mx-auto'>

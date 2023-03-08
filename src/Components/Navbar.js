@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { ColorContext } from "../context/GlobalState";
+import React from "react";
+import { useSelector } from "react-redux";
 import Button from "./Button";
 
 const Navbar = () => {
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   return (
     <div className='container mx-auto'>

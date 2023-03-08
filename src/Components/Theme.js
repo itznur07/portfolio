@@ -1,9 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { GiBranchArrow } from "react-icons/gi";
-import { ColorContext } from "../context/GlobalState";
+import { useDispatch, useSelector } from "react-redux";
+import { changeColor } from "../app/reducers/dataSlice";
 
 const Theme = () => {
-  const { color, dispatch } = useContext(ColorContext);
+  const dispatch = useDispatch();
+  const { color } = useSelector((state) => state.datas);
+
+  const handleChange = (color) => {
+    dispatch(changeColor(color));
+  };
 
   return (
     <>
@@ -15,33 +21,23 @@ const Theme = () => {
             </span>
           </div>
           <div
-            onClick={() => {
-              dispatch({ type: "change_color", value: "#FFE715" });
-            }}
+            onClick={() => handleChange("#FFE715")}
             className='w-5 h-5 rounded-full bg-[#FFE715] animate-pulse'
           ></div>
           <div
-            onClick={() => {
-              dispatch({ type: "change_color", value: "#FF69B3" });
-            }}
+            onClick={() => handleChange("#FF69B3")}
             className='w-5 h-5 rounded-full bg-[#FF69B3] animate-pulse'
           ></div>
           <div
-            onClick={() => {
-              dispatch({ type: "change_color", value: "#8CD7FE" });
-            }}
+            onClick={() => handleChange("#8CD7FE")}
             className='w-5 h-5 rounded-full bg-[#8CD7FE] animate-pulse'
           ></div>
           <div
-            onClick={() => {
-              dispatch({ type: "change_color", value: "#d902ee" });
-            }}
+            onClick={() => handleChange("#d902ee")}
             className='w-5 h-5 rounded-full bg-[#d902ee] animate-pulse'
           ></div>
           <div
-            onClick={() => {
-              dispatch({ type: "change_color", value: "#d71b3b" });
-            }}
+            onClick={() => handleChange("#d71b3b")}
             className='w-5 h-5 rounded-full bg-[#d71b3b] animate-pulse'
           ></div>
         </div>

@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 import myImg from '../assets/img/my-img.png';
-import { ColorContext } from "../context/GlobalState";
 import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 const About = () => {
 
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
 
   return (

@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { ColorContext } from "../context/GlobalState";
+import React from "react";
 import Button from "./Button";
 import MentionButton from "./MentionButton";
 
@@ -12,9 +11,10 @@ import {
   SiTailwindcss
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { useSelector } from "react-redux";
 
 const MySkill = () => {
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   return (
     <>

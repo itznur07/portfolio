@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { AiOutlineLine } from "react-icons/ai";
-import { ColorContext } from "../context/GlobalState";
+import { useSelector } from "react-redux";
 
 const MentionButton = ({ name }) => {
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   return (
     <div

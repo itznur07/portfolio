@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { ColorContext } from "../context/GlobalState";
+import React from "react";
+import { useSelector } from "react-redux";
 
 const Button = ({ name, cstyle }) => {
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   return (
     <div>

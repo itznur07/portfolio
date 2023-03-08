@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import GlobalProvider from "./context/GlobalState";
+import store from "./app/store";
 import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
 
@@ -10,9 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <GlobalProvider>
+      <Provider store={store}>
         <App />
-      </GlobalProvider>
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

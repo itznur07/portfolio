@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { ColorContext } from "../context/GlobalState";
+import React from "react";
 
 // import icons
 import { SiGithub } from "react-icons/si";
@@ -8,13 +7,15 @@ import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 // img
+import { useSelector } from "react-redux";
 import educy from "../assets/img/educy.png";
 import pixabay from "../assets/img/pixabay.png";
 import Portfolio from "../assets/img/portfolio.png";
 
 const Protfolio = () => {
   
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
+
 
   return (
     <>
@@ -97,7 +98,7 @@ const Protfolio = () => {
  */
 const Card = ({ img, name, describe, tags, repolink, livelink }) => {
 
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
 
   return (

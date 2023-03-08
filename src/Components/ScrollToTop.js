@@ -1,10 +1,10 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import { ColorContext } from "../context/GlobalState";
+import { useSelector } from "react-redux";
 
 function ScrollToTopButton() {
   
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   const [visibility, setVisibility] = useState(false);
 

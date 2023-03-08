@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { ColorContext } from "../context/GlobalState";
+import React from "react";
 
 // import icons
 import { AiFillMediumCircle } from 'react-icons/ai';
 import { BsCodeSquare } from "react-icons/bs";
 import { MdOutlineVideoSettings } from 'react-icons/md';
+import { useSelector } from "react-redux";
 import MentionButton from "./MentionButton";
 
 const LoveToDo = () => {
@@ -34,7 +34,7 @@ const LoveToDo = () => {
 
 const Card = ({ icon, name }) => {
 
-  const { color } = useContext(ColorContext);
+  const { color } = useSelector((state) => state.datas);
 
   return (
     <div style={{borderColor: color}} className='md:w-80 w-72 h-48 py-5 bg-[#1d293a] rounded md:flex items-center justify-center cursor-pointer hover:bg-white group transition ease-linear duration-200 border  border-opacity-30'>
