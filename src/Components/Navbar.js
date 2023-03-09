@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const Navbar = () => {
@@ -12,23 +12,23 @@ const Navbar = () => {
         {/* div 1 */}
         <div>
           <Link to='/'>
-          <span
-            className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full'
-            style={{ backgroundColor: color }}
-          >
-            N
-          </span>
+            <span
+              className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full'
+              style={{ backgroundColor: color }}
+            >
+              N
+            </span>
           </Link>
         </div>
         {/* div 1 */}
         {/* div 2 */}
         <div>
           <nav>
-            <ul className='flex items-center md:space-x-16 space-x-10 md:text-md text-md text-[#fff] font-medium cursor-pointer'>
-              <li className='hover:text-[#0eb761]'>Home</li>
-              <li className='hover:text-[#0eb761]'>About</li>
-              <li className='hover:text-[#0eb761]'>Portfolio</li>
-              <li className='hover:text-[#0eb761]'>Contact</li>
+            <ul className='flex items-center md:space-x-16 space-x-10 md:text-md text-md font-medium cursor-pointer'>
+              <li className={`text-white hover:text-[${color}]`}>Home</li>
+              <li className={`text-white hover:text-[${color}]`}>About</li>
+              <li className={`text-white hover:text-[${color}]`}>Portfolio</li>
+              <li className={`text-white hover:text-[${color}]`}>Contact</li>
             </ul>
           </nav>
         </div>
