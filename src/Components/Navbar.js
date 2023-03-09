@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
 import Button from "./Button";
 
 const Navbar = () => {
@@ -10,12 +11,14 @@ const Navbar = () => {
       <div className='md:flex md:flex-row md:justify-between items-center flex flex-col md:gap-y-0 gap-y-7 justify-center md:mx-24 mx-10 md:py-6 py-5'>
         {/* div 1 */}
         <div>
+          <Link to='/'>
           <span
             className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full'
             style={{ backgroundColor: color }}
           >
             N
           </span>
+          </Link>
         </div>
         {/* div 1 */}
         {/* div 2 */}

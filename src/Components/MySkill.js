@@ -3,18 +3,10 @@ import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 // import icons
-import { FaReact } from "react-icons/fa";
-import {
-  SiExpress,
-  SiMaterialui,
-  SiMongodb,
-  SiTailwindcss
-} from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
 import { useSelector } from "react-redux";
 
 const MySkill = () => {
-  const { color } = useSelector((state) => state.datas);
+  const { color, skills } = useSelector((state) => state.datas);
 
   return (
     <>
@@ -36,42 +28,14 @@ const MySkill = () => {
             </div>
             {/* skill card */}
             <div className='flex flex-wrap gap-10 md:mx-0 mx-16 md:mt-0 mt-10'>
-              <Card
-                icon={<FaReact />}
-                name='React'
-                lavel='Junior'
-                color={`${color}`}
-              />
-              <Card
-                icon={<SiTailwindcss />}
-                name='Tailwindcss'
-                lavel='Junior'
-                color={`${color}`}
-              />
-              <Card
-                icon={<TbBrandNextjs />}
-                name='Nextjs'
-                lavel='Begainner'
-                color={`${color}`}
-              />
-              <Card
-                icon={<SiExpress />}
-                name='Expressjs'
-                lavel='Begainner'
-                color={`${color}`}
-              />
-              <Card
-                icon={<SiMongodb />}
-                name='MongoDB'
-                lavel='Begainner'
-                color={`${color}`}
-              />
-              <Card
-                icon={<SiMaterialui />}
-                name='MaterialUI'
-                lavel='Begainner'
-                color={`${color}`}
-              />
+              {skills.map((tool) => (
+                <Card
+                  icon={tool.icon}
+                  name={tool.toolName}
+                  lavel={tool.lavel}
+                  color={`${color}`}
+                />
+              ))}
             </div>
             {/* skill card */}
           </div>
@@ -86,8 +50,13 @@ const MySkill = () => {
 
 const Card = ({ icon, name, lavel, color }) => {
   return (
-    <div style={{borderColor: color}} className='flex items-center justify-between rounded cursor-pointer w-80 px-5 h-20 py-5 bg-[#1d293a] border border-opacity-25'>
-      <div style={{color: color}} className={`text-5xl `}>{icon}</div>
+    <div
+      style={{ borderColor: color }}
+      className='flex items-center justify-between rounded cursor-pointer w-80 px-5 h-20 py-5 bg-[#1d293a] border border-opacity-25'
+    >
+      <div style={{ color: color }} className={`text-5xl `}>
+        {icon}
+      </div>
       <div className='space-y-3 text-right'>
         <h1 className='text-xl text-white font-bold'>{name}</h1>
         <span className='text-sm text-[#ddd] font-medium '>{lavel}</span>
