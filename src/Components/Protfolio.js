@@ -8,14 +8,9 @@ import MentionButton from "./MentionButton";
 
 // img
 import { useSelector } from "react-redux";
-import educy from "../assets/img/educy.png";
-import pixabay from "../assets/img/pixabay.png";
-import Portfolio from "../assets/img/portfolio.png";
 
 const Protfolio = () => {
-  
   const { color } = useSelector((state) => state.datas);
-
 
   return (
     <>
@@ -30,13 +25,21 @@ const Protfolio = () => {
           <div className='md:space-y-10 md:mt-0 mt-7 md:ml-0  ml-4'>
             {/* skill navbar */}
             <div className='flex md:gap-x-10 gap-x-3 md:ml-0 ml-16'>
-              <Button name='Web' cstyle={`border border-[${color}]`} />
-              <Button name='Other' cstyle={`border border-[${color}]`} />
+              <Button name='Projects' cstyle={`border border-[${color}]`} />
+              <a
+                href='https://github.com/itznur07'
+                target={"_blank"}
+                rel='noreferrer'
+              >
+                <Button
+                  name='More Projects'
+                  cstyle={`border border-[${color}]`}
+                />
+              </a>
             </div>
             {/* skill card */}
             <div className='md:flex flex-wrap items-center md:gap-x-10 gap-y-10 md:space-y-0 space-y-5 md:mt-0 mt-10'>
               <Card
-                img={Portfolio}
                 name='Developer Portfolio'
                 describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
                 tags={["React", "Tailwind", "Npm"]}
@@ -44,7 +47,6 @@ const Protfolio = () => {
                 livelink='https://m-design-portfolio.vercel.app/'
               />
               <Card
-                img={pixabay}
                 name='Pixbay'
                 describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
                 tags={["React", "scss", "Npm"]}
@@ -53,7 +55,6 @@ const Protfolio = () => {
               />
 
               <Card
-                img={educy}
                 name='Educy'
                 describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
                 tags={["React", "tailwind", "router"]}
@@ -90,34 +91,33 @@ const Protfolio = () => {
   );
 };
 
-
 /**
- * 
- * @param {*} param0 
- * @returns 
+ *
+ * @param {*} param0
+ * @returns
  */
-const Card = ({ img, name, describe, tags, repolink, livelink }) => {
-
+const Card = ({ name, describe, tags, repolink, livelink }) => {
   const { color } = useSelector((state) => state.datas);
 
-
   return (
-    <div style={{borderColor: color}} className='md:w-80 w-72 h-auto py-5 bg-[#1d293a] rounded md:flex items-center justify-center cursor-pointer hover:bg-white group transition ease-linear duration-200 border border-opacity-30'>
+    <div
+      style={{ borderColor: color }}
+      className='md:w-80 w-72 h-auto py-5 bg-[#1d293a] rounded md:flex items-center justify-center cursor-pointer hover:bg-white group transition ease-linear duration-200 border border-opacity-30'
+    >
       <div className='flex flex-col items-center gap-y-5'>
-        <span>
-          <img
-            className='grayscale group-hover:grayscale-0 transition ease-linear duration-200'
-            src={img}
-            alt='images'
-          />
-        </span>
-        <h1 style={{color: color}} className='text-2xl  group-hover:text-black font-semibold'>
+        <h1
+          style={{ color: color }}
+          className='text-2xl  group-hover:text-black font-semibold'
+        >
           {name}
         </h1>
         <p className='text-center text-sm text-[#ddd] group-hover:text-black'>
           {describe}
         </p>
-        <span style={{color: color}} className='flex text-xl group-hover:text-black  space-x-5'>
+        <span
+          style={{ color: color }}
+          className='flex text-xl group-hover:text-black  space-x-5'
+        >
           <a href={repolink} target='_blank' rel='noreferrer'>
             <SiGithub />
           </a>
@@ -129,7 +129,7 @@ const Card = ({ img, name, describe, tags, repolink, livelink }) => {
           {tags.map((item, i) => (
             <span
               key={i}
-              className='bg-[#636f81] px-3 py-1 rounded-md text-white'
+              className={`bg-[${color}] px-3 py-1 rounded-md text-white`}
             >
               {item}
             </span>
