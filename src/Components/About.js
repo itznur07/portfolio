@@ -1,13 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import myImg from '../assets/img/my-img.png';
+import myImg from "../assets/img/person.jpg";
 import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 const About = () => {
-
   const { color } = useSelector((state) => state.datas);
-
 
   return (
     <div className='container mx-auto'>
@@ -28,7 +26,7 @@ const About = () => {
         {/* div 2 */}
         <div>
           <img
-            className='rounded md:w-64 w-54 grayscale hover:grayscale-0 transition ease-linear duration-300'
+            className='rounded-full md:w-64 w-64 grayscale hover:grayscale-0 transition ease-linear duration-300'
             src={myImg}
             alt='img'
           />
