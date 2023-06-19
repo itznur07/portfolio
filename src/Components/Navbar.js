@@ -27,7 +27,8 @@ const Navbar = () => {
             <ul className='flex items-center md:space-x-16 space-x-10 md:text-md text-md font-medium cursor-pointer'>
               <li className={`text-white hover:text-[${color}]`}>Home</li>
               <li className={`text-white hover:text-[${color}]`}>About</li>
-              <li className={`text-white hover:text-[${color}]`}>Portfolio</li>
+              <li className={`text-white hover:text-[${color}]`}>Skills</li>
+              <li className={`text-white hover:text-[${color}]`}>Project</li>
               <li className={`text-white hover:text-[${color}]`}>Contact</li>
             </ul>
           </nav>
