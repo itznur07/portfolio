@@ -6,6 +6,16 @@ import {
   FaMedium,
   FaTwitter,
 } from "react-icons/fa";
+import {
+  SiExpress,
+  SiFirebase,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiReact,
+  SiRedux,
+  SiTailwindcss,
+} from "react-icons/si";
 import { useSelector } from "react-redux";
 import Button from "./Button";
 import Icon from "./Icon";
@@ -16,6 +26,41 @@ const Banner = () => {
 
   return (
     <div className='container mx-auto'>
+      <div>
+        <SiJavascript
+          size={24}
+          className='absolute text-yellow-500 md:top-52 md:left-44 top-44 left-32'
+        />
+        <SiReact
+          size={28}
+          className='absolute text-blue-500 md:top-64 top-52 md:left-96 left-72 md:ml-16 animate-spin'
+        />
+        <SiTailwindcss
+          size={26}
+          className='absolute text-[#38BDF8] md:bottom-56 bottom-32 md:ml-16 md:left-96'
+        />
+        <SiRedux
+          size={24}
+          className='absolute text-[#38BDF8] md:bottom-96 bottom-96 md:ml-16 md:left-64 left-20'
+        />
+
+        <SiNodedotjs
+          size={24}
+          className={`absolute text-[#5F9856] md:top-64 md:right-96 md:ml-16`}
+        />
+        <SiExpress
+          size={24}
+          className={`absolute text-[${mode?.text}] md:bottom-72 md:right-52`}
+        />
+        <SiMongodb
+          size={26}
+          className='absolute text-[#00ED64] md:bottom-56 md:ml-16 md:right-96'
+        />
+        <SiFirebase
+          size={24}
+          className='absolute text-[#FFCB2D] md:bottom-96  md:right-72'
+        />
+      </div>
       <div className='md:mx-24 mx-10 md:flex items-center md:my-0 my-16 md:gap-x-16 md:h-screen'>
         {/* div 1 */}
         <div className='md:flex md:flex-col flex flex-col-reverse md:gap-y-20 gap-y-5 items-center'>
