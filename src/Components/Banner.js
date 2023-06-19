@@ -37,20 +37,20 @@ const Banner = () => {
         />
         <SiTailwindcss
           size={26}
-          className='absolute text-[#38BDF8] md:bottom-56 bottom-32 md:ml-16 md:left-96'
+          className='absolute text-[#00ED64] md:bottom-56 bottom-32 md:ml-16 md:left-96'
         />
         <SiRedux
           size={24}
-          className='absolute text-[#38BDF8] md:bottom-96 bottom-96 md:ml-16 md:left-64 left-20'
+          className='absolute text-[#00ED64] md:bottom-96 bottom-96 md:ml-16 md:left-64 left-20'
         />
 
         <SiNodedotjs
           size={24}
-          className={`absolute text-[#5F9856] md:top-64 md:right-96 md:ml-16`}
+          className={`absolute text-[#00ED64] md:top-64 md:right-96 md:ml-16`}
         />
         <SiExpress
           size={24}
-          className={`absolute text-[${mode?.text}] md:bottom-72 md:right-52`}
+          className={`absolute text-[#00ED64] md:bottom-72 md:right-52`}
         />
         <SiMongodb
           size={26}
@@ -58,7 +58,7 @@ const Banner = () => {
         />
         <SiFirebase
           size={24}
-          className='absolute text-[#FFCB2D] md:bottom-96  md:right-72'
+          className='absolute text-[#00ED64] md:bottom-96  md:right-72'
         />
       </div>
       <div className='md:mx-24 mx-10 md:flex items-center md:my-0 my-16 md:gap-x-16 md:h-screen'>
