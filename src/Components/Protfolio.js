@@ -42,7 +42,7 @@ const Protfolio = () => {
               <Card
                 name='Edoofy'
                 describe='Online Educational Platform Using MERN Stack.'
-                tags={["React", "Expressjs", "MongoDB", "MERN"]}
+                tags={["React", "Expressjs", "MongoDB"]}
                 repolink='https://github.com/itznur07/edoofy-client'
                 livelink='https://edoofy-13bd9.web.app/'
               />
