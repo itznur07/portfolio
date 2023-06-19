@@ -40,47 +40,26 @@ const Protfolio = () => {
             {/* skill card */}
             <div className='md:flex flex-wrap items-center md:gap-x-10 gap-y-10 md:space-y-0 space-y-5 md:mt-0 mt-10'>
               <Card
-                name='Developer Portfolio'
-                describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
-                tags={["React", "Tailwind", "Npm"]}
-                repolink='https://github.com/itznur07/m-design-portfolio'
-                livelink='https://m-design-portfolio.vercel.app/'
+                name='Edoofy'
+                describe='Online Educational Platform Using MERN Stack.'
+                tags={["React", "Expressjs", "MongoDB", "MERN"]}
+                repolink='https://github.com/itznur07/edoofy-client'
+                livelink='https://edoofy-13bd9.web.app/'
               />
               <Card
-                name='Pixbay'
-                describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
-                tags={["React", "scss", "Npm"]}
-                repolink='https://github.com/itznur07/Pixabay_Clone_Reactjs_Tailwindcss'
-                livelink='https://gracious-wiles-6398e8.netlify.app/'
+                name='Bistro'
+                describe='Restuarant Website Using MERN Stack'
+                tags={["React", "Express.js", "MongoDB"]}
+                repolink='https://github.com/itznur07/bistro-resturent-client'
+                livelink='https://bistro-boss-auth-db7f4.web.app/'
               />
 
               <Card
-                name='Educy'
-                describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
-                tags={["React", "tailwind", "router"]}
-                repolink='https://github.com/itznur07/edusy'
-                livelink='https://edusy-qkziw5nhb-itznur07.vercel.app/'
-              />
-              <Card
-                name='Gredient io'
-                describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
-                tags={["Nextjs", "tailwind", "router"]}
-                repolink='https://github.com/itznur07/Gradiena'
-                livelink='https://imn81.csb.app/'
-              />
-              <Card
-                name='Text Reader'
-                describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
-                tags={["Reactjs", "scss", "api"]}
-                repolink='https://github.com/itznur07/react-text-reader-assisten-app'
-                livelink='https://pensive-mirzakhani-e7a89b.netlify.app/'
-              />
-              <Card
-                name='Weather Application'
-                describe='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga perspiciatis magni error ipsum ducimus.'
-                tags={["Reactjs", "css", "api"]}
-                repolink='https://github.com/itznur07/reactjs-weather-apps'
-                livelink='https://keen-thompson-ada8e8.netlify.app/'
+                name='RepairIt'
+                describe='Car Repair Service Website Usign MERN Stack'
+                tags={["React", "Express.js", "MongoDB"]}
+                repolink='https://github.com/itznur07/car-garaz-client'
+                livelink='https://car-doctors-2294b.web.app/'
               />
             </div>
           </div>
