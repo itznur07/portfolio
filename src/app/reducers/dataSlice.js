@@ -14,7 +14,7 @@ import {
 const dataSlice = createSlice({
   name: "datas",
   initialState: {
-    color: "#1F6D4F",
+    color: "#25D366",
     skills: [
       { toolName: "Javascript", icon: <SiJavascript />, lavel: "Intermediate" },
       { toolName: "React", icon: <FaReact />, lavel: "Intermediate" },
