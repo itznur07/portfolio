@@ -4,7 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaMedium,
-  FaTwitter
+  FaTwitter,
 } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import Button from "./Button";
@@ -46,7 +46,10 @@ const Banner = () => {
             Hello I'm
           </p>
           <p className='md:text-7xl text-5xl font-bold text-[#fff]'>Nuruddin</p>
-          <p style={{color: color}} className='md:text-2xl text-xl font-medium mt-5'>
+          <p
+            style={{ color: color }}
+            className='md:text-2xl text-xl font-medium mt-5'
+          >
             Frontend Developer
           </p>
           <span className='md:text-xl text-sm text-[#fff] font-medium'>
@@ -62,7 +65,7 @@ const Banner = () => {
           </span>
           <div className='flex items-center gap-4 mt-5'>
             <a
-              href='https://drive.google.com/file/d/1ImNylwGYbKjIjaMq7UlpMFPigWhGldtj/view?usp=sharing'
+              href='https://drive.google.com/file/d/1-n17DQGbrK5KcBjFyuE0iDURW_dfFZVn/view?usp=sharing'
               target='_blank'
               rel='noreferrer'
             >

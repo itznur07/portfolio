@@ -26,7 +26,7 @@ const About = () => {
         {/* div 2 */}
         <div>
           <img
-            className={`rounded-full md:w-64 w-64 border border-[${color}]`}
+            className={`rounded-full md:w-64 w-64 border border-[${color}] `}
             src={myImg}
             alt='img'
           />
