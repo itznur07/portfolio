@@ -1,8 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import myImg from "../assets/img/person.jpg";
+// import myImg from "../assets/img/person.jpg";
 import Button from "./Button";
 import MentionButton from "./MentionButton";
+
+const myImg =
+  "https://media.licdn.com/dms/image/D5603AQHjuRe_LH0uNQ/profile-displayphoto-shrink_400_400/0/1687440592973?e=1692835200&v=beta&t=ejS6DOXzteVPd36W7Q9q_0ep24pgRvN10r_wz5XjnlY";
 
 const About = () => {
   const { color } = useSelector((state) => state.datas);
@@ -12,7 +15,7 @@ const About = () => {
       <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-24 mx-5 md:gap-y-0 gap-y-10 py-10'>
         {/* div 1 */}
         <div className='space-y-5'>
-          <p className='text-md text-[#fff] font-medium leading-loose'>
+          <p className='text-md text-[#1d293a] font-medium leading-loose'>
             Hello, I’m Nur Uddin. a Creative <br /> Frontend Developer. I
             Develop Modern <br /> & Powerful Web Applications & Mobile <br />{" "}
             Application using Javascript Frontend Framework{" "}

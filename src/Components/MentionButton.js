@@ -11,7 +11,7 @@ const MentionButton = ({ name }) => {
       className='flex items-center gap-y-2 md:-rotate-90 text-xl  font-medium'
     >
       <AiOutlineLine />
-      <span className='uppercase bg-[#1d293a] py-2 px-5 rounded-md font-bold'>
+      <span className='uppercase bg-[#fff]  border py-2 px-5 rounded-md font-bold'>
         {name}
       </span>
       <AiOutlineLine />{" "}

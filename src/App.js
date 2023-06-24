@@ -8,7 +8,7 @@ import Home from "./Pages/Home";
 
 const App = () => {
   return (
-    <div className=' bg-[#111A28]'>
+    <div className='bg-[#ffffff]'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

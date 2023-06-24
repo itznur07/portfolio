@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaMedium,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from "react-icons/fa";
 import {
   SiExpress,
   SiFirebase,
@@ -26,40 +20,16 @@ const Banner = () => {
 
   return (
     <div className='container mx-auto'>
-      <div>
-        <SiJavascript
-          size={24}
-          className='absolute text-yellow-500 md:top-52 md:left-44 top-44 left-32'
-        />
-        <SiReact
-          size={28}
-          className='absolute text-blue-500 md:top-64 top-52 md:left-96 left-72 md:ml-16 animate-spin'
-        />
-        <SiTailwindcss
-          size={26}
-          className='absolute text-[#00ED64] md:bottom-56 bottom-32 md:ml-16 md:left-96'
-        />
-        <SiRedux
-          size={24}
-          className='absolute text-[#00ED64] md:bottom-96 bottom-96 md:ml-16 md:left-64 left-20'
-        />
-
-        <SiNodedotjs
-          size={24}
-          className={`absolute text-[#00ED64] md:top-64 md:right-96 md:ml-16`}
-        />
-        <SiExpress
-          size={24}
-          className={`absolute text-[#00ED64] md:bottom-72 md:right-52`}
-        />
-        <SiMongodb
-          size={26}
-          className='absolute text-[#00ED64] md:bottom-56 md:ml-16 md:right-96'
-        />
-        <SiFirebase
-          size={24}
-          className='absolute text-[#00ED64] md:bottom-96  md:right-72'
-        />
+      <div className='absolute md:grid grid-cols-3 gap-10 top-1/2 right-1/4 hidden'>
+        <SiJavascript size={24} />
+        <SiReact size={28} className='animate-spin' />
+        <SiTailwindcss size={26} />
+        <SiRedux size={24} />
+        <SiNodedotjs size={24} />
+        <SiExpress size={24} />
+        <SiMongodb size={26} />
+        <SiFirebase size={24} />
+        <SiNodedotjs size={24} />
       </div>
       <div className='md:mx-24 mx-10 md:flex items-center md:my-0 my-16 md:gap-x-16 md:h-screen'>
         {/* div 1 */}
@@ -75,10 +45,6 @@ const Banner = () => {
             />
             <Icon icon={<FaTwitter />} link={`https://twitter.com/itznur07`} />
             <Icon icon={<FaMedium />} link={`https://itznur07.medium.com/`} />
-            <Icon
-              icon={<FaInstagram />}
-              link={`https://www.instagram.com/itznur07/`}
-            />
           </div>
           <div>
             <MentionButton name='Social' />
@@ -90,14 +56,16 @@ const Banner = () => {
           <p style={{ color: color }} className='text-xl font-medium'>
             Hello I'm
           </p>
-          <p className='md:text-7xl text-5xl font-bold text-[#fff]'>Nuruddin</p>
+          <p className='md:text-7xl text-5xl font-bold text-[#1d293a]'>
+            Nur Uddin
+          </p>
           <p
             style={{ color: color }}
             className='md:text-2xl text-xl font-medium mt-5'
           >
             Frontend Developer
           </p>
-          <span className='md:text-xl text-sm text-[#fff] font-medium'>
+          <span className='md:text-xl text-sm text-[#1d293a] font-medium'>
             Web Developer{" "}
             <small style={{ color: color }} className='text-md '>
               •

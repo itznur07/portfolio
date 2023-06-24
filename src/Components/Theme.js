@@ -1,10 +1,9 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { changeColor } from "../app/reducers/dataSlice";
 
 const Theme = () => {
   const dispatch = useDispatch();
-  const { color } = useSelector((state) => state.datas);
 
   const handleChange = (color) => {
     dispatch(changeColor(color));
