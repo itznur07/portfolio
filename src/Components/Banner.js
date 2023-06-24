@@ -20,16 +20,18 @@ const Banner = () => {
 
   return (
     <div className='container mx-auto'>
-      <div className='absolute md:grid grid-cols-3 gap-10 top-1/2 right-1/4 hidden'>
-        <SiJavascript size={24} />
-        <SiReact size={28} className='animate-spin' />
-        <SiTailwindcss size={26} />
-        <SiRedux size={24} />
-        <SiNodedotjs size={24} />
-        <SiExpress size={24} />
-        <SiMongodb size={26} />
-        <SiFirebase size={24} />
-        <SiNodedotjs size={24} />
+      <div
+        className={`absolute md:grid grid-cols-3 gap-10 top-1/2 right-1/4 hidden`}
+      >
+        <SiJavascript color={color} size={24} />
+        <SiReact color={color} size={28} className='animate-spin' />
+        <SiTailwindcss color={color} size={26} />
+        <SiRedux color={color} size={24} />
+        <SiNodedotjs color={color} size={24} />
+        <SiExpress color={color} size={24} />
+        <SiMongodb color={color} size={26} />
+        <SiFirebase color={color} size={24} />
+        <SiNodedotjs color={color} size={24} />
       </div>
       <div className='md:mx-24 mx-10 md:flex items-center md:my-0 my-16 md:gap-x-16 md:h-screen'>
         {/* div 1 */}

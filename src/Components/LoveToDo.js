@@ -1,15 +1,13 @@
 import React from "react";
 
 // import icons
-import { AiFillMediumCircle } from 'react-icons/ai';
+import { AiFillMediumCircle } from "react-icons/ai";
 import { BsCodeSquare } from "react-icons/bs";
-import { MdOutlineVideoSettings } from 'react-icons/md';
+import { MdOutlineVideoSettings } from "react-icons/md";
 import { useSelector } from "react-redux";
 import MentionButton from "./MentionButton";
 
 const LoveToDo = () => {
-
-
   return (
     <>
       <div className='container mx-auto'>
@@ -33,14 +31,20 @@ const LoveToDo = () => {
 // todo card
 
 const Card = ({ icon, name }) => {
-
   const { color } = useSelector((state) => state.datas);
 
   return (
-    <div style={{borderColor: color}} className='md:w-80 w-72 h-48 py-5 bg-[#fff] rounded md:flex items-center justify-center cursor-pointer hover:bg-white group transition ease-linear duration-200 border  border-opacity-30'>
-      <div className="flex flex-col items-center gap-y-5">
-        <span style={{color: color}} className='text-7xl'>{icon}</span>
-        <h1 className='text-2xl text-[#1d293a] group-hover:text-black font-semibold'>{name}</h1>
+    <div
+      style={{ borderColor: color }}
+      className='md:w-80 w-72 h-48 py-5 bg-[#fff] rounded md:flex items-center justify-center cursor-pointer hover:bg-white group hover:shadow-lg hover:transform hover:transition hover:duration-500 hover:scale-105  border  border-opacity-30'
+    >
+      <div className='flex flex-col items-center gap-y-5'>
+        <span style={{ color: color }} className='text-7xl'>
+          {icon}
+        </span>
+        <h1 className='text-2xl text-[#1d293a] group-hover:text-black font-semibold'>
+          {name}
+        </h1>
       </div>
     </div>
   );

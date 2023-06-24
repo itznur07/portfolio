@@ -16,9 +16,11 @@ const About = () => {
         {/* div 1 */}
         <div className='space-y-5'>
           <p className='text-md text-[#1d293a] font-medium leading-loose'>
-            Hello, I’m Nur Uddin. a Creative <br /> Frontend Developer. I
-            Develop Modern <br /> & Powerful Web Applications & Mobile <br />{" "}
-            Application using Javascript Frontend Framework{" "}
+            Hi, I’m Nur Uddin. a MERN Stack Developer. <br /> with a passion for
+            creating dynamic and user-friendly web applications. <br /> I enjoy
+            learning new skills <br /> and exploring new challenges in the field
+            of web development. <br /> I’m always open to new opportunities and
+            collaborations.
           </p>
           <div className='flex space-x-5'>
             <Button name='Get resume' cstyle={`bg-[${color}]`} />
@@ -29,7 +31,7 @@ const About = () => {
         {/* div 2 */}
         <div>
           <img
-            className={`rounded-full md:w-64 w-64 border border-[${color}] `}
+            className={`rounded-full md:w-64 w-64  `}
             src={myImg}
             alt='img'
           />

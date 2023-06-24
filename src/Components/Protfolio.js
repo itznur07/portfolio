@@ -14,7 +14,7 @@ const Protfolio = () => {
         <div className='md:flex items-center md:justify-between justify-center md:gap-x-10 md:mx-24 h-auto mt-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='md:ml-0 ml-10'>
-            <MentionButton name='Portfolio' />
+            <MentionButton name='Projects' />
           </div>
           {/* div 1 */}
           {/* div 2 */}
@@ -36,7 +36,7 @@ const Protfolio = () => {
             {/* skill card */}
             <div className='md:flex flex-wrap items-center md:gap-x-10 gap-y-10 md:space-y-0 space-y-5 md:mt-0 mt-10'>
               <Card
-                img='https://deeplor.s3.us-west-2.amazonaws.com/matting_original/2023/06/24/e2a8c28d67a24553bf261181ea9b2733.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230624T013055Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIAROYXHKZUSZONTWIG%2F20230624%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=7d5353b0467def9f4dcb25ed2aa4f36e2868bad2fc2e580fe8bae03c657e6ec8'
+                img='https://scontent.xx.fbcdn.net/v/t1.15752-9/355941904_145436225172332_6662452190459162229_n.png?stp=dst-png_p403x403&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeFC93DYIMVlMx6PCzPivTKdXGuNeGVPIpJca414ZU8ikka15AWIB8UomsYZAAX6OJQV-H7oswP73GRPai632uR9&_nc_ohc=dAE04hm6YTMAX8tedOf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRT2dOm7sdy6jD8ZmOAIBOvNhcYYpAH5S6bWvXu-vmv7A&oe=64BE0B29'
                 name='Edoofy'
                 describe='Online Educational Platform Using MERN Stack.'
                 tags={["React", "Expressjs", "MongoDB"]}
@@ -44,7 +44,7 @@ const Protfolio = () => {
                 livelink='https://edoofy-13bd9.web.app/'
               />
               <Card
-                img='https://deeplor.s3.us-west-2.amazonaws.com/matting_original/2023/06/24/6082eff2c40940a9bfc5c8021c75115a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230624T013250Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIAROYXHKZUSZONTWIG%2F20230624%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=1f72a27d518586d20032abd39ae0f0440687a881439bdfa18d8fa99db8d77456'
+                img='https://scontent.xx.fbcdn.net/v/t1.15752-9/356036180_259219850045930_6738716822988796238_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeH95svAmE5FVWEapwmA3UgPJxjY12Nm0H8nGNjXY2bQf1LiiEugO92Ywla6DXi6V9Oh6R7tHoxYgNBDBxZZAL6S&_nc_ohc=6nF0ymMrRpcAX-SDUp3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTQ9Z96MyVUqG3LKsDs0T3-3wgl2avaXItZ9CVzoaK0RA&oe=64BE286E'
                 name='Bistro'
                 describe='Restaurant Website Using MERN Stack'
                 tags={["React", "Express.js", "MongoDB"]}
@@ -52,7 +52,7 @@ const Protfolio = () => {
                 livelink='https://bistro-boss-auth-db7f4.web.app/'
               />
               <Card
-                img='https://deeplor.s3.us-west-2.amazonaws.com/matting_original/2023/06/24/a31f2fe8e00046919136c7e140c8271b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230624T013409Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIAROYXHKZUSZONTWIG%2F20230624%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=eb0aa665b7b57ffe92c956c9c369376efca608dadb2dca4ad8300535a38ee392'
+                img='https://scontent.xx.fbcdn.net/v/t1.15752-9/353890756_1510579176141046_5939846327529939771_n.png?stp=dst-png_p403x403&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeFpRrNsQWWeAt4q7uaeCEEmDcodvbh2rtYNyh29uHau1qaHdJeXDuTw9uTfBhho2R03KdV3aOBepatWlQ-1tH36&_nc_ohc=vn6_yQ0UEq8AX9-7uT7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSmIqRfPwi4MfFF6i1EIrCx12vEB9Xp-eLtONGWJ0caag&oe=64BE1AA2'
                 name='Magic Playtime'
                 describe='Toys Products Types Website Using MERN Stack'
                 tags={["React", "Express.js", "MongoDB"]}
@@ -74,7 +74,7 @@ const Card = ({ img, name, describe, tags, repolink, livelink }) => {
   return (
     <div
       style={{ borderColor: color }}
-      className='md:w-80 w-80 h-auto py-5 bg-[#fff] rounded md:flex items-center justify-center cursor-pointer group transition ease-linear duration-200 border border-opacity-30'
+      className='md:w-80 w-80 h-auto py-5 bg-[#fff] rounded md:flex items-center justify-center cursor-pointer group hover:shadow-lg hover:transform hover:transition hover:duration-500 hover:scale-105  duration-200 border border-opacity-30 '
     >
       <div className='flex flex-col items-center gap-y-5'>
         <div

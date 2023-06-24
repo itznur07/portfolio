@@ -7,8 +7,8 @@ import ScrollToTopButton from "./ScrollToTop";
 const Footer = () => {
   return (
     <>
-      <div className='container mx-auto bg-[#1d293a] py-5'>
-        <div className='flex gap-x-5 items-center justify-center md:justify-between md:mx-24 md:py-8'>
+      <div className='container mx-auto bg-[#1d293a] py-3'>
+        <div className='flex gap-x-5 items-center justify-center md:justify-between md:mx-24 md:py-2'>
           {/* div 1 */}
           <div>
             <h1 className='text-xl font-bold text-white'>@Itznur07</h1>

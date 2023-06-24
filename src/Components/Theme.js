@@ -12,7 +12,7 @@ const Theme = () => {
   return (
     <>
       <div className='container mx-auto md:flex-none flex md:justify-start justify-center'>
-        <div className='md:space-y-5 md:space-x-0 md:flex md:flex-col items-center absolute md:top-80 md:right-0 md:mx-24 flex top-48  space-x-6   cursor-pointer'>
+        <div className='md:space-y-5 md:space-x-0 md:flex md:flex-col items-center absolute md:top-80 md:right-0 md:mx-24 flex top-48  space-x-6 cursor-pointer'>
           <div
             onClick={() => handleChange("#FFE715")}
             className='w-5 h-5 rounded-full bg-[#FFE715]'

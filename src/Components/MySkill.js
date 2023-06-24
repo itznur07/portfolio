@@ -51,7 +51,7 @@ const Card = ({ icon, name, lavel, color }) => {
   return (
     <div
       style={{ borderColor: color }}
-      className='flex items-center justify-between rounded cursor-pointer w-80 px-5 h-20 py-5 bg-[#fff]  border border-opacity-25'
+      className='flex items-center justify-between rounded w-80 px-5 h-20 py-5 bg-[#fff] border border-opacity-25 hover:shadow-lg hover:transform hover:transition hover:duration-500 hover:scale-105 cursor-pointer'
     >
       <div style={{ color: color }} className={`text-5xl `}>
         {icon}

@@ -14,22 +14,17 @@ import {
 const dataSlice = createSlice({
   name: "datas",
   initialState: {
-    color: "#25D366",
+    color: "#0A69DC",
     skills: [
       { toolName: "Javascript", icon: <SiJavascript />, lavel: "Intermediate" },
       { toolName: "React", icon: <FaReact />, lavel: "Intermediate" },
       { toolName: "Express.js", icon: <SiExpress />, lavel: "Intermediate" },
       { toolName: "MongoDB", icon: <SiMongodb />, lavel: "Intermediate" },
       { toolName: "Firebase", icon: <SiFirebase />, lavel: "Intermediate" },
-      {
-        toolName: "Tailwindcss",
-        icon: <SiTailwindcss />,
-        lavel: "Advanced",
-      },
+      { toolName: "Tailwind", icon: <SiTailwindcss />, lavel: "Advanced" },
       { toolName: "Figma", icon: <FaFigma />, lavel: "Intermediate" },
       { toolName: "React", icon: <SiReactrouter />, lavel: "Intermediate" },
       { toolName: "JWT", icon: <SiJsonwebtokens />, lavel: "Intermediate" },
-
       { toolName: "Git", icon: <FaGitAlt />, lavel: "Intermediate" },
       { toolName: "Vercel", icon: <SiVercel />, lavel: "Intermediate" },
       { toolName: "Github", icon: <FaGithubAlt />, lavel: "Advanced" },
