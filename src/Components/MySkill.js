@@ -10,8 +10,8 @@ const MySkill = () => {
 
   return (
     <>
-      <div className='container mx-auto'>
-        <div className='md:flex items-center md:justify-between justify-center md:mx-24 md:mt-28 mt-20 md:h-96 h-auto md:space-y-0 space-y-10 md:space-x-20 md:py-0 py-5'>
+      <div className='max-w-7xl mx-auto'>
+        <div className='md:flex items-center md:justify-between justify-center md:mx-0 md:mt-28 mt-20 md:h-96 h-auto md:space-y-0 space-y-10 md:space-x-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='md:ml-0 ml-36'>
             <MentionButton name='Skills' />

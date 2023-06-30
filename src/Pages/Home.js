@@ -9,10 +9,8 @@ import LoveToDo from "../Components/LoveToDo";
 import MySkill from "../Components/MySkill";
 import Navbar from "../Components/Navbar";
 import Protfolio from "../Components/Protfolio";
-import Theme from "../Components/Theme";
 
 const Home = () => {
-  
   const { color } = useSelector((state) => state.datas);
 
   const { scrollYProgress } = useScroll();
@@ -31,7 +29,7 @@ const Home = () => {
         <Protfolio />
         <Contact />
         <Footer />
-        <Theme />
+        {/* <Theme /> */}
       </div>
     </>
   );

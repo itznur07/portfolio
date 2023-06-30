@@ -11,8 +11,8 @@ const About = () => {
   const { color } = useSelector((state) => state.datas);
 
   return (
-    <div className='container mx-auto'>
-      <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-24 mx-5 md:gap-y-0 gap-y-10 py-10'>
+    <div className='max-w-7xl mx-auto h-96'>
+      <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-0 mx-5 md:gap-y-0 gap-y-10 py-10'>
         {/* div 1 */}
         <div className='space-y-5'>
           <p className='text-md text-[#1d293a] font-medium leading-loose'>
