@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className='max-w-7xl mx-auto'>
-      <div className='md:flex md:flex-row md:justify-between items-center flex flex-col md:gap-y-0 gap-y-7 justify-center md:py-6 py-5'>
+      <div className='md:flex md:flex-row  items-center flex flex-col justify-between md:gap-y-0 gap-y-7 md:py-6 py-5'>
         {/* div 1 */}
         <div className='flex justify-between items-center'>
           <Link to='/'>
