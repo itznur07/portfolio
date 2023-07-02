@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className='max-w-7xl mx-auto'>
       <div className='md:flex md:flex-row  items-center flex flex-col justify-between md:gap-y-0 gap-y-7 md:py-6 py-5'>
         {/* div 1 */}
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between md:space-x-0 space-x-64 items-center'>
           <Link to='/'>
             <span
               className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full'

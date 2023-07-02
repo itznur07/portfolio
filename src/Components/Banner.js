@@ -11,7 +11,7 @@ const Banner = () => {
 
   return (
     <div className='max-w-7xl mx-auto h-screen'>
-      <div className='mt-20'>
+      <div className='md:mt-20'>
         <div className='flex md:flex-row flex-col-reverse items-center justify-between'>
           <div className='flex'>
             {/* div 1 */}

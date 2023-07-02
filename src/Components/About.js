@@ -4,17 +4,16 @@ import { useSelector } from "react-redux";
 import Button from "./Button";
 import MentionButton from "./MentionButton";
 
-const myImg =
-  "https://media.licdn.com/dms/image/D5603AQHjuRe_LH0uNQ/profile-displayphoto-shrink_400_400/0/1687440592973?e=1692835200&v=beta&t=ejS6DOXzteVPd36W7Q9q_0ep24pgRvN10r_wz5XjnlY";
+const myImg = "https://avatars.githubusercontent.com/u/76656507?v=4";
 
 const About = () => {
   const { color } = useSelector((state) => state.datas);
 
   return (
-    <div className='max-w-7xl mx-auto h-96'>
-      <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-0 mx-5 md:gap-y-0 gap-y-10 py-10'>
+    <div className='max-w-7xl mx-auto md:h-96 h-auto  md:mb-0 mb-44'>
+      <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-0 mx-5 md:gap-y-0 gap-y-10'>
         {/* div 1 */}
-        <div className='space-y-5'>
+        <div className='space-y-5 md:text-start text-center'>
           <p className='text-md text-[#1d293a] font-medium leading-loose'>
             Hi, I’m Nur Uddin. a MERN Stack Developer. <br /> with a passion for
             creating dynamic and user-friendly web applications. <br /> I enjoy
@@ -22,8 +21,8 @@ const About = () => {
             of web development. <br /> I’m always open to new opportunities and
             collaborations.
           </p>
-          <div className='flex space-x-5'>
-            <Button name='Get resume' cstyle={`bg-[${color}]`} />
+          <div className='flex md:justify-start justify-center space-x-5'>
+            <Button name='Get resume' cstyle={`bg-[${color}] `} />
             <Button name='My Skills' cstyle={`border border-[${color}]`} />
           </div>
         </div>

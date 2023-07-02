@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 // import icons
@@ -10,24 +9,16 @@ const MySkill = () => {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto'>
-        <div className='md:flex items-center md:justify-between justify-center md:mx-0 md:mt-28 mt-20 md:h-96 h-auto md:space-y-0 space-y-10 md:space-x-20 md:py-0 py-5'>
+      <div className='max-w-7xl mx-auto mt-20'>
+        <div className='md:flex items-center md:justify-between justify-center md:mx-0 h-auto md:space-y-0 space-y-10 md:space-x-20 md:py-0 py-5'>
           {/* div 1 */}
-          <div className='md:ml-0 ml-36'>
+          <div className='md:ml-0 md:flex-none flex items-center justify-center'>
             <MentionButton name='Skills' />
           </div>
           {/* div 1 */}
           {/* div 2 */}
           <div className='md:space-y-10'>
-            {/* skill navbar */}
-            <div className='flex md:gap-x-10 gap-x-3 md:ml-0 ml-10'>
-              <Button name='Web' cstyle={`border border-[${color}]`} />
-              <Button name='Other' cstyle={`border border-[${color}]`} />
-              <Button name='Programming' cstyle={`border border-[${color}]`} />
-              <Button name='Tools' cstyle={`border border-[${color}]`} />
-            </div>
-            {/* skill card */}
-            <div className='flex flex-wrap gap-10 md:mx-0 mx-16 md:mt-0 mt-10'>
+            <div className='flex flex-wrap md:justify-start justify-center gap-10 md:mx-0 mx-16 md:mt-0 mt-10'>
               {skills.map((tool) => (
                 <Card
                   icon={tool.icon}

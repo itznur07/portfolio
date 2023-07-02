@@ -8,7 +8,7 @@ const MentionButton = ({ name }) => {
   return (
     <div
       style={{ color: color }}
-      className='flex items-center transform rotate-90'
+      className='flex items-center transform md:rotate-90 rotate-0'
     >
       <AiOutlineLine />
       <span className='uppercase bg-[#fff]  border py-2 px-5 rounded-md font-bold'>

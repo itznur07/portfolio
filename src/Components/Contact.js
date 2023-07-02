@@ -129,8 +129,7 @@ const Contact = () => {
                       required: "Message field is required",
                     })}
                     style={{ borderColor: color }}
-                    className={`md:mt-0 mt-3 w-64 border outline-none px-3 py-3 rounded focus:ring-1 focus:ring-[${color}] focus:border-0 focus:border-transparent focus:shadow-lg focus:transform focus:transition focus:duration-500 focus:scale-105`}
-                    cols='20'
+                    className={`md:mt-0 mt-3 w-72 border outline-none px-3 py-3 rounded focus:ring-1 focus:ring-[${color}] focus:border-0 focus:border-transparent focus:shadow-lg focus:transform focus:transition focus:duration-500 focus:scale-105`}
                     rows='5'
                     placeholder='Message'
                     type='text'
@@ -146,8 +145,7 @@ const Contact = () => {
               </div>
               <div className='md:mt-3 mt-2'>
                 <button
-                  className={`w-full bg-[${color}] text-md border p-2 px-5 rounded`}
-                  style={{ borderColor: `${color}` }}
+                  className={`w-full bg-[#0A69DC] text-white font-medium text-md border p-2 px-5 rounded`}
                 >
                   Send
                 </button>

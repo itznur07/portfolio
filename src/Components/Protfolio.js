@@ -2,37 +2,20 @@ import React from "react";
 import { SiGithub } from "react-icons/si";
 import { VscLiveShare } from "react-icons/vsc";
 import { useSelector } from "react-redux";
-import Button from "./Button";
 import MentionButton from "./MentionButton";
 
 const Protfolio = () => {
-  const { color } = useSelector((state) => state.datas);
-
   return (
     <>
-      <div className='container mx-auto items-center md:flex-none flex justify-center'>
-        <div className='md:flex items-center md:justify-between justify-center md:gap-x-10 md:mx-24 h-auto mt-20 md:py-0 py-5'>
+      <div className='max-w-7xl mx-auto items-center md:flex-none flex justify-center'>
+        <div className='md:flex items-center md:justify-between justify-center md:gap-x-10 e h-auto mt-20 md:py-0 py-5'>
           {/* div 1 */}
-          <div className='md:ml-0 ml-10'>
+          <div className='md:ml-0 md:flex-none flex items-center justify-center'>
             <MentionButton name='Projects' />
           </div>
           {/* div 1 */}
           {/* div 2 */}
           <div className='md:space-y-10 md:mt-0 mt-7 md:ml-0 ml-4'>
-            {/* skill navbar */}
-            <div className='flex md:gap-x-10 gap-x-3 md:ml-0 ml-16'>
-              <Button name='Projects' cstyle={`border border-[${color}]`} />
-              <a
-                href='https://github.com/itznur07'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <Button
-                  name='More Projects'
-                  cstyle={`border border-[${color}]`}
-                />
-              </a>
-            </div>
             {/* skill card */}
             <div className='md:flex flex-wrap items-center md:gap-x-10 gap-y-10 md:space-y-0 space-y-5 md:mt-0 mt-10'>
               <Card
