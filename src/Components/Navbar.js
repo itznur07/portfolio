@@ -7,7 +7,7 @@ const Navbar = () => {
   const { color } = useSelector((state) => state.datas);
   const [showMenu, setShowMenu] = useState(false); // state to control menu visibility
   const [activeSection, setActiveSection] = useState("");
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -140,7 +140,7 @@ const Navbar = () => {
           className={`${showMenu ? "block" : "hidden"} md:block mt-5 md:mt-0`}
         >
           <a
-            href='https://drive.google.com/file/d/1-n17DQGbrK5KcBjFyuE0iDURW_dfFZVn/view?usp=sharing'
+            href='https://drive.google.com/file/d/1MZA8pPjZKQ8zkjolwbTJonSe3cslGteq/view?usp=sharing'
             target='_blank'
             rel='noreferrer'
           >
