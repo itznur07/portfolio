@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Button from "./Button";
@@ -6,6 +6,40 @@ import Button from "./Button";
 const Navbar = () => {
   const { color } = useSelector((state) => state.datas);
   const [showMenu, setShowMenu] = useState(false); // state to control menu visibility
+  const [activeSection, setActiveSection] = useState("");
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollPosition >= sectionTop - sectionHeight / 2) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className='max-w-7xl mx-auto'>
@@ -52,14 +86,50 @@ const Navbar = () => {
         >
           <nav>
             <ul className='flex flex-col md:flex-row items-center md:space-x-16 space-y-5 md:space-y-0 md:text-md text-md font-medium cursor-pointer'>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>Home</li>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>About</li>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>Skills</li>
               <li className={`text-[#1d293a] hover:text-[${color}]`}>
-                Project
+                <a
+                  href='#home'
+                  className={activeSection === "section1" ? "active" : ""}
+                  onClick={() => scrollToSection("section1")}
+                >
+                  Home
+                </a>
               </li>
               <li className={`text-[#1d293a] hover:text-[${color}]`}>
-                Contact
+                <a
+                  href='#about'
+                  className={activeSection === "section2" ? "active" : ""}
+                  onClick={() => scrollToSection("section2")}
+                >
+                  About
+                </a>
+              </li>
+              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+                <a
+                  href='#skills'
+                  className={activeSection === "section3" ? "active" : ""}
+                  onClick={() => scrollToSection("section3")}
+                >
+                  Skills
+                </a>
+              </li>
+              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+                <a
+                  href='#project'
+                  className={activeSection === "section4" ? "active" : ""}
+                  onClick={() => scrollToSection("section4")}
+                >
+                  Projects
+                </a>
+              </li>
+              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+                <a
+                  href='#contact'
+                  className={activeSection === "section5" ? "active" : ""}
+                  onClick={() => scrollToSection("section5")}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </nav>

@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='cotainer mx-auto'>
+      <div id="contact" className='cotainer mx-auto'>
         <div className='md:flex md:flex-row flex flex-col-reverse items-center md:justify-between md:mx-24 md:h-96 h-auto mt-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='space-y-5 md:mt-0 mt-5'>

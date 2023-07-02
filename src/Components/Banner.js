@@ -18,7 +18,7 @@ const Banner = () => {
             <div className='flex flex-col space-y-20 items-center'>
               <div
                 style={{ color: color }}
-                className='flex md:flex-col flex-row items-center md:space-y-5 space-x-3'
+                className='flex md:flex-col flex-row items-center md:space-y-5 md:space-x-0 space-x-3'
               >
                 <Icon
                   icon={<FaGithub />}

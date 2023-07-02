@@ -7,7 +7,7 @@ import MentionButton from "./MentionButton";
 const Protfolio = () => {
   return (
     <>
-      <div className='max-w-7xl mx-auto items-center md:flex-none flex justify-center'>
+      <div id="project" className='max-w-7xl mx-auto items-center md:flex-none flex justify-center'>
         <div className='md:flex items-center md:justify-between justify-center md:gap-x-10 e h-auto mt-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='md:ml-0 md:flex-none flex items-center justify-center'>

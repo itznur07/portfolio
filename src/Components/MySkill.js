@@ -9,7 +9,7 @@ const MySkill = () => {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto mt-20'>
+      <div id="skills" className='max-w-7xl mx-auto mt-20'>
         <div className='md:flex items-center md:justify-between justify-center md:mx-0 h-auto md:space-y-0 space-y-10 md:space-x-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='md:ml-0 md:flex-none flex items-center justify-center'>
