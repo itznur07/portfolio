@@ -10,15 +10,15 @@ const Banner = () => {
   const { color } = useSelector((state) => state.datas);
 
   return (
-    <div className='max-w-7xl mx-auto h-screen'>
+    <div className='max-w-7xl mx-auto md:h-screen h-auto md:mb-0'>
       <div className='md:mt-20'>
         <div className='flex md:flex-row flex-col-reverse items-center justify-between'>
-          <div className='flex'>
+          <div className='flex md:flex-row  flex-col md:mt-0 mt-20'>
             {/* div 1 */}
             <div className='flex flex-col space-y-20 items-center'>
               <div
                 style={{ color: color }}
-                className='flex flex-col items-center space-y-5'
+                className='flex md:flex-col flex-row items-center md:space-y-5 space-x-3'
               >
                 <Icon
                   icon={<FaGithub />}
@@ -44,7 +44,7 @@ const Banner = () => {
             </div>
             {/* div 1 */}
             {/* div 2 */}
-            <div className=''>
+            <div className='md:mt-0'>
               <p style={{ color: color }} className='text-xl font-medium'>
                 Hello I'm
               </p>
