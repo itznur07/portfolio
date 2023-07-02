@@ -1,5 +1,5 @@
 import React from "react";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiServerfault } from "react-icons/si";
 import { VscLiveShare } from "react-icons/vsc";
 import { useSelector } from "react-redux";
 import MentionButton from "./MentionButton";
@@ -7,7 +7,10 @@ import MentionButton from "./MentionButton";
 const Protfolio = () => {
   return (
     <>
-      <div id="project" className='max-w-7xl mx-auto items-center md:flex-none flex justify-center'>
+      <div
+        id='project'
+        className='max-w-7xl mx-auto items-center md:flex-none flex justify-center'
+      >
         <div className='md:flex items-center md:justify-between justify-center md:gap-x-10 e h-auto mt-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='md:ml-0 md:flex-none flex items-center justify-center'>
@@ -24,6 +27,7 @@ const Protfolio = () => {
                 describe='Online Educational Platform Using MERN Stack.'
                 tags={["React", "Expressjs", "MongoDB"]}
                 repolink='https://github.com/itznur07/edoofy-client'
+                server='https://github.com/itznur07/edoofy-server'
                 livelink='https://edoofy-13bd9.web.app/'
               />
               <Card
@@ -32,6 +36,7 @@ const Protfolio = () => {
                 describe='Restaurant Website Using MERN Stack'
                 tags={["React", "Express.js", "MongoDB"]}
                 repolink='https://github.com/itznur07/bistro-resturent-client'
+                server='https://github.com/itznur07/bistro-resturent-server'
                 livelink='https://bistro-boss-auth-db7f4.web.app/'
               />
               <Card
@@ -40,6 +45,7 @@ const Protfolio = () => {
                 describe='Toys Products Types Website Using MERN Stack'
                 tags={["React", "Express.js", "MongoDB"]}
                 repolink='https://github.com/itznur07/magic-playtime-client'
+                server='https://github.com/itznur07/magic-playtime-server'
                 livelink='https://magic-playtime.web.app/'
               />
             </div>
@@ -51,7 +57,7 @@ const Protfolio = () => {
   );
 };
 
-const Card = ({ img, name, describe, tags, repolink, livelink }) => {
+const Card = ({ img, name, describe, tags, repolink, livelink, server }) => {
   const { color } = useSelector((state) => state.datas);
 
   return (
@@ -92,12 +98,24 @@ const Card = ({ img, name, describe, tags, repolink, livelink }) => {
           style={{ color: color }}
           className='flex text-xl group-hover:text-[#1d293a] space-x-5'
         >
-          <a href={repolink} target='_blank' rel='noreferrer'>
-            <SiGithub />
-          </a>
-          <a href={livelink} target='_blank' rel='noreferrer'>
-            <VscLiveShare />
-          </a>
+          <div className='flex flex-col items-center'>
+            <a href={server} target='_blank' rel='noreferrer'>
+              <SiServerfault />
+            </a>
+            <span className='text-sm'>Server</span>
+          </div>
+          <div className='flex flex-col items-center'>
+            <a href={repolink} target='_blank' rel='noreferrer'>
+              <SiGithub />
+            </a>
+            <span className='text-sm'>Repo</span>
+          </div>
+          <div className='flex flex-col items-center'>
+            <a href={livelink} target='_blank' rel='noreferrer'>
+              <VscLiveShare />
+            </a>
+            <span className='text-sm'>Host</span>
+          </div>
         </span>
         <div className='text-center flex items-center space-x-5 mt-2'>
           {tags.map((item, i) => (

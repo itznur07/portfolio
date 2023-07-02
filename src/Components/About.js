@@ -10,7 +10,10 @@ const About = () => {
   const { color } = useSelector((state) => state.datas);
 
   return (
-    <div id="about" className='max-w-7xl mx-auto md:h-96 h-auto  md:mb-0 md:my-0 my-20'>
+    <div
+      id='about'
+      className='max-w-7xl mx-auto md:h-96 h-auto  md:mb-0 md:my-0 my-20'
+    >
       <div className='md:flex md:flex-row flex flex-col-reverse items-center justify-around md:mx-0 mx-5 md:gap-y-0 gap-y-10'>
         {/* div 1 */}
         <div className='space-y-5 md:text-start text-center'>
@@ -22,7 +25,7 @@ const About = () => {
             collaborations.
           </p>
           <div className='flex md:justify-start justify-center space-x-5'>
-            <Button name='Get resume' cstyle={`bg-[${color}] `} />
+            <Button name='Get resume' cstyle={`bg-[${color}] `}></Button>
             <Button name='My Skills' cstyle={`border border-[${color}]`} />
           </div>
         </div>
