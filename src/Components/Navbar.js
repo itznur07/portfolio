@@ -140,7 +140,7 @@ const Navbar = () => {
           className={`${showMenu ? "block" : "hidden"} md:block mt-5 md:mt-0`}
         >
           <a
-            href='https://drive.google.com/file/d/1-n17DQGbrK5KcBjFyuE0iDURW_dfFZVn/view?usp=sharing'
+            href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'
             target='_blank'
             rel='noreferrer'
           >

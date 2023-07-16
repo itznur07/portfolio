@@ -70,7 +70,7 @@ const Banner = () => {
               </span>
               <div className='flex items-center gap-4 mt-5'>
                 <a
-                  href='https://drive.google.com/file/d/1MZA8pPjZKQ8zkjolwbTJonSe3cslGteq/view?usp=sharing'
+                  href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'
                   target='_blank'
                   rel='noreferrer'
                 >

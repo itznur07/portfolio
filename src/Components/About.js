@@ -25,7 +25,10 @@ const About = () => {
             collaborations.
           </p>
           <div className='flex md:justify-start justify-center space-x-5'>
-            <Button name='Get resume' cstyle={`bg-[${color}] `}></Button>
+            <Button name='Get resume' cstyle={`bg-[${color}] `}>
+              {" "}
+              <a href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'></a>{" "}
+            </Button>
             <Button name='My Skills' cstyle={`border border-[${color}]`} />
           </div>
         </div>
