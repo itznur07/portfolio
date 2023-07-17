@@ -1,20 +1,20 @@
 import React from "react";
-import signImg from "../../assets/sign.png";
+import myWork from "../../assets/my-works.png";
 
-const CredenticalCard = () => {
+const Showcase = () => {
   return (
     <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#171717]'>
       <div>
-        <img src={signImg} alt='signature' className="p-1" />
+        <img src={myWork} alt='work-imag' className="p-1" />
       </div>
       <div>
         <p className='text-xs uppercase font-medium text-[#8a8a8a] mb-2'>
-          More about me
+          Showcase
         </p>
-        <p className='text-2xl font-semibold text-white'>Credentials</p>
+        <p className='text-2xl font-semibold text-white'>Projects</p>
       </div>
     </div>
   );
 };
 
-export default CredenticalCard;
+export default Showcase;

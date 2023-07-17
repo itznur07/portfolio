@@ -46,9 +46,7 @@ const Navbar = () => {
         {/* div 1 */}
         <div className='flex justify-between md:space-x-0 space-x-96 items-center'>
           <Link to='/'>
-            <span
-              className='text-5xl font-bold text-[#f5f5f5] rounded-full'
-            >
+            <span className='text-5xl font-bold text-[#f5f5f5] rounded-full'>
               NUR.
             </span>
           </Link>
@@ -141,7 +139,7 @@ const Navbar = () => {
             href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'
             target='_blank'
             rel='noreferrer'
-            className="border px-4 py-2 text-[#f5f5f5] border-[#1D293A] font-medium rounded"
+            className='px-5 py-2.5 text-[#fff] hover:text-[#000] bg-[#323232] hover:bg-[#f5f5f5] font-medium rounded-lg transition ease-linear duration-200 delay-75'
           >
             Resume
           </a>

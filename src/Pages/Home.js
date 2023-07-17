@@ -1,4 +1,4 @@
-import { motion, useScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import React from "react";
 import { useSelector } from "react-redux";
 import Banner from "../Components/Banner";
@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
       <div className="bg-[#0F0F0F]">
-        <motion.div
+        {/* <motion.div
           className='progress-bar'
           style={{ scaleX: scrollYProgress, backgroundColor: color }}
-        />
+        /> */}
         <Navbar />
         <Banner />
         {/* <About />
