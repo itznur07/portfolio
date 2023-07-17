@@ -4,6 +4,7 @@ import CredenticalCard from "./CredenticalCard/CredenticalCard";
 import MarqueeCard from "./MarqueeCard/MarqueeCard";
 import ProfileCard from "./ProfileCard/ProfileCard";
 import Showcase from "./Showwcase/Showcase";
+import SocialProfile from "./SocialProfile/SocialProfile";
 
 const Banner = () => {
   const { color } = useSelector((state) => state.datas);
@@ -27,6 +28,17 @@ const Banner = () => {
               <Showcase></Showcase>
             </div>
           </div>
+        </div>
+      </div>
+      {/* hero1 ends here */}
+      {/* hero2 here */}
+      <div className='grid grid-cols-12 gap-5 mt-5'>
+        <div className="col-span-3">
+          <SocialProfile></SocialProfile>
+        </div>
+        <div className="col-span-6">Middle</div>
+        <div className="col-span-3">
+          <SocialProfile></SocialProfile>
         </div>
       </div>
       {/* hero2 ends here */}
