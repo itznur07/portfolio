@@ -3,33 +3,32 @@ import { AiOutlineFork } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
 import ScrollToTopButton from "./ScrollToTop";
 
-
 const Footer = () => {
   return (
     <>
-      <div className='container mx-auto bg-[#1d293a] py-3'>
-        <div className='flex gap-x-5 items-center justify-center md:justify-between md:mx-24 md:py-2'>
+      <div className='container mx-auto  py-3  bg-gradient-to-r from-[#262626] to-[#171717]'>
+        <div className='flex gap-x-5 items-center justify-between md:justify-between max-w-6xl mx-auto md:py-2'>
           {/* div 1 */}
           <div>
-            <h1 className='text-xl font-bold text-white'>@Itznur07</h1>
+            <h1 className='text-xl font-bold text-white'>Nur.07</h1>
           </div>
           {/* div 1 */}
           {/* div 2 */}
-          <div className='flex md:gap-x-10 gap-x-6 text-white text-md'>
-            <div>
+          <div className='flex items-center space-x-5 text-white text-md'>
+            <div className='flex items-center space-x-2'>
               <a
                 className='flex space-x-1'
                 href='https://github.com/itznur07/portfolio'
                 target='_blank'
                 rel='noreferrer'
               >
-                <FaStar />
+                <FaStar fontWeight={700}/>
                 <span className='uppercase'>Star</span>
               </a>
             </div>
             <div>
               <a
-                className='flex space-x-1'
+                className='flex items-center space-x-2 font-bold'
                 href='https://github.com/itznur07/portfolio'
                 target='_blank'
                 rel='noreferrer'
@@ -38,7 +37,9 @@ const Footer = () => {
                 <span className='uppercase'>Fork</span>
               </a>
             </div>
-            <div><ScrollToTopButton /></div>
+            <div>
+              <ScrollToTopButton />
+            </div>
           </div>
           {/* div 2 */}
         </div>
