@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Button from "./Button";
 
 const Navbar = () => {
   const { color } = useSelector((state) => state.datas);
@@ -48,10 +47,9 @@ const Navbar = () => {
         <div className='flex justify-between md:space-x-0 space-x-64 items-center'>
           <Link to='/'>
             <span
-              className='text-xl font-semibold text-[#fff] px-3 py-2 rounded-full'
-              style={{ backgroundColor: color }}
+              className='text-2xl font-bold text-[#1D293A]  px-3 py-2 rounded-full'
             >
-              N
+              NUR.
             </span>
           </Link>
           {/* hamburger icon for mobile view */}
@@ -143,8 +141,9 @@ const Navbar = () => {
             href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'
             target='_blank'
             rel='noreferrer'
+            className="border px-4 py-2 text-[#1D293A] border-[#1D293A] font-medium rounded"
           >
-            <Button name='Resume' cstyle={`border border-[${color}]`} />
+            Resume
           </a>
         </div>
         {/* div 3 */}

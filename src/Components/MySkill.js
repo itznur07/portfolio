@@ -38,18 +38,17 @@ const MySkill = () => {
 };
 
 // skill card
-const Card = ({ icon, name, lavel, color }) => {
+const Card = ({ icon, name, color }) => {
   return (
     <div
       style={{ borderColor: color }}
-      className='flex items-center justify-between rounded w-80 px-5 h-20 py-5 bg-[#fff] border border-opacity-25 hover:shadow-lg hover:transform hover:transition hover:duration-500 hover:scale-105 cursor-pointer'
+      className='flex flex-col space-y-3 items-center w-36 h-36 rounded-full p-5 bg-[#fff] border border-opacity-25 hover:shadow-lg hover:transform hover:transition hover:duration-500 hover:scale-105 cursor-pointer'
     >
       <div style={{ color: color }} className={`text-5xl `}>
         {icon}
       </div>
       <div className='space-y-3 text-right'>
-        <h1 className='text-xl text-[#1d293a] font-bold'>{name}</h1>
-        <span className='text-sm text-[#1d293a] font-medium '>{lavel}</span>
+        <h1 className='text-lg text-[#1d293a] font-medium'>{name}</h1>
       </div>
     </div>
   );
