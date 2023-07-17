@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import MarqueeCard from "./MarqueeCard/MarqueeCard";
 import ProfileCard from "./ProfileCard/ProfileCard";
 
 const Banner = () => {
@@ -12,7 +13,13 @@ const Banner = () => {
         <div className='md:col-span-6 col-span-12'>
           <ProfileCard></ProfileCard>
         </div>
-        <div className='md:col-span-6 col-span-12'>right section</div>
+        <div className='md:col-span-6 col-span-12'>
+          <div className="col-span-6">
+            <MarqueeCard></MarqueeCard>
+          </div>
+          <div className="col-span-3">2</div>
+          <div className="col-span-3">3</div>
+        </div>
       </div>
       {/* hero2 ends here */}
     </div>
