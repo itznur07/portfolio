@@ -1,91 +1,20 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from "react-icons/fa";
 import { useSelector } from "react-redux";
-import bannerImg from "../../src/assets/banner-logo.svg";
-import Button from "./Button";
-import Icon from "./Icon";
-import MentionButton from "./MentionButton";
+import ProfileCard from "./ProfileCard/ProfileCard";
 
 const Banner = () => {
   const { color } = useSelector((state) => state.datas);
 
   return (
-    <div className='max-w-7xl mx-auto md:h-screen h-auto md:mb-0'>
-      <div className='md:mt-20'>
-        <div className='flex md:flex-row flex-col-reverse items-center justify-between'>
-          <div className='flex md:flex-row  flex-col md:mt-0 mt-20'>
-            {/* div 1 */}
-            <div className='flex flex-col space-y-20 items-center'>
-              <div
-                style={{ color: color }}
-                className='flex md:flex-col flex-row items-center md:space-y-5 md:space-x-0 space-x-3'
-              >
-                <Icon
-                  icon={<FaGithub />}
-                  link={`https://github.com/itznur07`}
-                />
-                <Icon
-                  icon={<FaLinkedin />}
-                  link={`https://www.linkedin.com/in/itznur07/`}
-                />
-                <Icon
-                  icon={<FaTwitter />}
-                  link={`https://twitter.com/itznur07`}
-                />
-                <Icon
-                  icon={<FaMedium />}
-                  link={`https://itznur07.medium.com/`}
-                />
-              </div>
-
-              <div>
-                <MentionButton name='Social' />
-              </div>
-            </div>
-            {/* div 1 */}
-            {/* div 2 */}
-            <div className='md:mt-0'>
-              <p style={{ color: color }} className='text-xl font-medium'>
-                Hello I'm
-              </p>
-              <p className='md:text-7xl text-5xl font-bold text-[#1d293a]'>
-                Nur Uddin
-              </p>
-              <p
-                style={{ color: color }}
-                className='md:text-2xl text-xl font-medium mt-5'
-              >
-                Frontend Developer
-              </p>
-              <span className='md:text-xl text-sm text-[#1d293a] font-medium'>
-                Web Developer{" "}
-                <small style={{ color: color }} className='text-md '>
-                  •
-                </small>{" "}
-                Programmer{" "}
-                <small style={{ color: color }} className='text-md '>
-                  •
-                </small>{" "}
-                Designer
-              </span>
-              <div className='flex items-center gap-4 mt-5'>
-                <a
-                  href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <Button name='Get Resume' cstyle={`bg-[${color}]`} />
-                </a>
-                <Button name='About me' cstyle={`border border-[${color}]`} />
-              </div>
-            </div>
-            {/* div 2 */}
-          </div>
-          <div className=''>
-            <img src={bannerImg} alt='' />
-          </div>
+    <div className='max-w-6xl mx-auto my-10'>
+      {/* hero1 here */}
+      <div className='grid grid-cols-12 gap-10'>
+        <div className='md:col-span-6 col-span-12'>
+          <ProfileCard></ProfileCard>
         </div>
+        <div className='md:col-span-6 col-span-12'>right section</div>
       </div>
+      {/* hero2 ends here */}
     </div>
   );
 };

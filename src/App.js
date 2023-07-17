@@ -8,7 +8,7 @@ import Home from "./Pages/Home";
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-r from-[#f5f5f5]  to-blue-400 '>
+    <div className=''>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

@@ -41,13 +41,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-6xl mx-auto'>
       <div className='md:flex md:flex-row  items-center flex flex-col justify-between md:gap-y-0 gap-y-7 md:py-6 py-5'>
         {/* div 1 */}
-        <div className='flex justify-between md:space-x-0 space-x-64 items-center'>
+        <div className='flex justify-between md:space-x-0 space-x-96 items-center'>
           <Link to='/'>
             <span
-              className='text-2xl font-bold text-[#1D293A]  px-3 py-2 rounded-full'
+              className='text-5xl font-bold text-[#f5f5f5] rounded-full'
             >
               NUR.
             </span>
@@ -84,7 +84,7 @@ const Navbar = () => {
         >
           <nav>
             <ul className='flex flex-col md:flex-row items-center md:space-x-16 space-y-5 md:space-y-0 md:text-md text-md font-medium cursor-pointer'>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+              <li className={`text-[#676767] hover:text-[${color}]`}>
                 <a
                   href='#home'
                   className={activeSection === "section1" ? "active" : ""}
@@ -93,7 +93,7 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+              <li className={`text-[#676767] hover:text-[${color}]`}>
                 <a
                   href='#about'
                   className={activeSection === "section2" ? "active" : ""}
@@ -102,7 +102,7 @@ const Navbar = () => {
                   About
                 </a>
               </li>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+              <li className={`text-[#676767] hover:text-[${color}]`}>
                 <a
                   href='#skills'
                   className={activeSection === "section3" ? "active" : ""}
@@ -111,7 +111,7 @@ const Navbar = () => {
                   Skills
                 </a>
               </li>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+              <li className={`text-[#676767] hover:text-[${color}]`}>
                 <a
                   href='#project'
                   className={activeSection === "section4" ? "active" : ""}
@@ -120,7 +120,7 @@ const Navbar = () => {
                   Projects
                 </a>
               </li>
-              <li className={`text-[#1d293a] hover:text-[${color}]`}>
+              <li className={`text-[#676767] hover:text-[${color}]`}>
                 <a
                   href='#contact'
                   className={activeSection === "section5" ? "active" : ""}
@@ -141,7 +141,7 @@ const Navbar = () => {
             href='https://docs.google.com/document/d/1deOhuohW61m7Zub-mtYbQ3Zh8t7OUdDl8wGhSWF9mAw/edit?usp=sharing'
             target='_blank'
             rel='noreferrer'
-            className="border px-4 py-2 text-[#1D293A] border-[#1D293A] font-medium rounded"
+            className="border px-4 py-2 text-[#f5f5f5] border-[#1D293A] font-medium rounded"
           >
             Resume
           </a>
