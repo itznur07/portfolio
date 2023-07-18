@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* div 1 */}
         <div className='flex justify-between md:space-x-0 space-x-96 items-center'>
           <Link to='/'>
-            <span className='text-5xl font-bold text-[#f5f5f5] rounded-full'>
+            <span className='text-5xl font-bold  shadow-inner text-[#f5f5f5] rounded-full'>
               NUR.
             </span>
           </Link>

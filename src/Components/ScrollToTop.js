@@ -3,7 +3,6 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { useSelector } from "react-redux";
 
 function ScrollToTopButton() {
-  
   const { color } = useSelector((state) => state.datas);
 
   const [visibility, setVisibility] = useState(false);
@@ -28,14 +27,16 @@ function ScrollToTopButton() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    
-    <div className='animate-bounce'>
+    <div className=''>
       <button
-        className=' text-[#fff] text-xl rounded-full px-2 py-2'
+        className='bg-gradient-to-r from-[#262626] to-[#171717] border border-white border-opacity-10 text-[#fff] text-xl rounded-full px-2 py-2'
         onClick={handleClick}
-        style={{ visibility: visibility ? "visible" : "hidden", backgroundColor: color }}
+        style={{
+          visibility: visibility ? "visible" : "hidden",
+          backgroundColor: color,
+        }}
       >
-        <AiOutlineArrowUp />
+        <AiOutlineArrowUp className=' animate-bounce' />
       </button>
     </div>
   );

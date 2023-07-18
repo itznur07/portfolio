@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex gap-x-5 items-center justify-between md:justify-between max-w-6xl mx-auto md:py-2'>
           {/* div 1 */}
           <div>
-            <h1 className='text-xl font-bold text-white'>Nur.07</h1>
+            <h1 className='text-xl font-bold text-white'>NUR.</h1>
           </div>
           {/* div 1 */}
           {/* div 2 */}

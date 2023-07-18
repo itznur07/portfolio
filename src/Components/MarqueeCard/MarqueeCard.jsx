@@ -2,7 +2,7 @@ import React from "react";
 
 const MarqueeCard = () => {
   return (
-    <div className='rounded-full bg-gradient-to-r from-[#262626] to-[#171717] border border-[#8a8a8a] border-opacity-25'>
+    <div className='rounded-full bg-gradient-to-r from-[#262626] to-[#151515] border border-[#8a8a8a] border-opacity-25'>
       <marquee
         behavior=''
         direction=''

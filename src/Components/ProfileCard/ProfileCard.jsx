@@ -3,7 +3,7 @@ import personImg from "../../assets/person.png";
 
 const ProfileCard = () => {
   return (
-    <div className='bg-gradient-to-r from-[#262626] to-[#171717]  rounded-3xl p-10 md:mx-0 mx-5'>
+    <div className='bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 md:mx-0 mx-5'>
       <div className='flex items-center space-x-6'>
         <div>
           <img

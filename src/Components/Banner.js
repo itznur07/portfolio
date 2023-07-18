@@ -6,6 +6,7 @@ import MarqueeCard from "./MarqueeCard/MarqueeCard";
 import ProfileCard from "./ProfileCard/ProfileCard";
 import Showcase from "./Showwcase/Showcase";
 import SocialProfile from "./SocialProfile/SocialProfile";
+import Specialization from "./Specialization/Specialization";
 
 const Banner = () => {
   const { color } = useSelector((state) => state.datas);
@@ -37,7 +38,9 @@ const Banner = () => {
         <div className='col-span-3'>
           <SocialProfile></SocialProfile>
         </div>
-        <div className='col-span-6'>Middle</div>
+        <div className='col-span-6'>
+          <Specialization></Specialization>
+        </div>
         <div className='col-span-3'>
           <BlogCard></BlogCard>
         </div>

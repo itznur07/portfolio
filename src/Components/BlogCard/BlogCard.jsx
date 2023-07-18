@@ -3,7 +3,7 @@ import blogImg from "../../assets/gfonts.png";
 
 const BlogCard = () => {
   return (
-    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#171717]'>
+    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515]'>
       <div>
         <img src={blogImg} alt='blogImage' className='p-1' />
       </div>
