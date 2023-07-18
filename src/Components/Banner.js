@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import BlogCard from "./BlogCard/BlogCard";
 import CredenticalCard from "./CredenticalCard/CredenticalCard";
 import MarqueeCard from "./MarqueeCard/MarqueeCard";
 import ProfileCard from "./ProfileCard/ProfileCard";
@@ -33,12 +34,12 @@ const Banner = () => {
       {/* hero1 ends here */}
       {/* hero2 here */}
       <div className='grid grid-cols-12 gap-5 mt-5'>
-        <div className="col-span-3">
+        <div className='col-span-3'>
           <SocialProfile></SocialProfile>
         </div>
-        <div className="col-span-6">Middle</div>
-        <div className="col-span-3">
-          <SocialProfile></SocialProfile>
+        <div className='col-span-6'>Middle</div>
+        <div className='col-span-3'>
+          <BlogCard></BlogCard>
         </div>
       </div>
       {/* hero2 ends here */}
