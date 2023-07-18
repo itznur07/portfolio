@@ -7,6 +7,7 @@ import ProfileCard from "./ProfileCard/ProfileCard";
 import Showcase from "./Showwcase/Showcase";
 import SocialProfile from "./SocialProfile/SocialProfile";
 import Specialization from "./Specialization/Specialization";
+import Greeting from "./WellCome/Greeting";
 import WorkTogether from "./WorkTogether/WorkTogether";
 
 const Banner = () => {
@@ -52,6 +53,7 @@ const Banner = () => {
       <div className='grid grid-cols-12 mt-5 gap-5'>
         <div className='col-span-6'>
           <WorkTogether></WorkTogether>
+          <Greeting></Greeting>
         </div>
         <div className='col-span-6'>
           <PolarAreaChart></PolarAreaChart>
