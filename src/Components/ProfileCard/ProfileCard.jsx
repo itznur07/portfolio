@@ -9,7 +9,7 @@ const ProfileCard = () => {
           <img
             src={personImg}
             className='rounded-tl-3xl rounded-br-3xl border border-[#8a8a8a]'
-            alt='person-image'
+            alt='personmage'
           />
         </div>
         <div className='flex flex-col space-y-2'>

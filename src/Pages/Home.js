@@ -1,14 +1,12 @@
-import { useScroll } from "framer-motion";
 import React from "react";
-import { useSelector } from "react-redux";
 import Banner from "../Components/Banner";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const Home = () => {
-  const { color } = useSelector((state) => state.datas);
+  // const { color } = useSelector((state) => state.datas);
 
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
   return (
     <>
       <div className="bg-[#0F0F0F]">

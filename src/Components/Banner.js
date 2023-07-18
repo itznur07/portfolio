@@ -1,9 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import BlogCard from "./BlogCard/BlogCard";
 import CredenticalCard from "./CredenticalCard/CredenticalCard";
 import MarqueeCard from "./MarqueeCard/MarqueeCard";
-import OptionalSection from "./OptionalSection/OptionalSection";
+import PolarAreaChart from "./OptionalSection/OptionalSection";
 import ProfileCard from "./ProfileCard/ProfileCard";
 import Showcase from "./Showwcase/Showcase";
 import SocialProfile from "./SocialProfile/SocialProfile";
@@ -11,7 +10,7 @@ import Specialization from "./Specialization/Specialization";
 import WorkTogether from "./WorkTogether/WorkTogether";
 
 const Banner = () => {
-  const { color } = useSelector((state) => state.datas);
+  // const { color } = useSelector((state) => state.datas);
 
   return (
     <div className='max-w-6xl mx-auto my-10'>
@@ -55,7 +54,7 @@ const Banner = () => {
           <WorkTogether></WorkTogether>
         </div>
         <div className='col-span-6'>
-          <OptionalSection></OptionalSection>
+          <PolarAreaChart></PolarAreaChart>
         </div>
       </div>
       {/* hero3 ends here */}

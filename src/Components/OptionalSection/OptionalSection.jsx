@@ -1,28 +1,68 @@
-import React from "react";
-import { FaGithubAlt, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Chart from "chart.js/auto";
+import React, { useEffect, useRef } from "react";
 
-const OptionalSection = () => {
+const data = {
+  labels: [
+    "Javascript",
+    "ReactJs",
+    "Nextjs",
+    "ExpressJs",
+    "mongodb",
+    "tailwindcss",
+    "typescript",
+    "firebase",
+  ],
+  datasets: [
+    {
+      label: "Skill Level",
+      data: [70, 90, 70, 70, 60, 100, 60, 70],
+      backgroundColor: [
+        "rgba(75, 192, 192, 0.6)",
+        "rgba(255, 99, 132, 0.6)",
+        "rgba(54, 162, 235, 0.6)",
+        "rgba(255, 206, 86, 0.6)",
+        "rgba(153, 102, 255, 0.6)",
+        "rgba(255, 159, 64, 0.6)",
+        "rgba(201, 203, 207, 0.6)",
+        "rgba(255, 99, 132, 0.6)",
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
+
+const options = {
+  scale: {
+    ticks: { beginAtZero: true, max: 100, stepSize: 20 },
+    gridLines: { color: "rgba(255, 255, 255, 0.3)" },
+    pointLabels: { fontColor: "#ffffff" },
+  },
+};
+
+const PolarAreaChart = () => {
+  const chartContainer = useRef(null);
+  const chartInstance = useRef(null);
+
+  useEffect(() => {
+    if (chartContainer && chartContainer.current) {
+      if (chartInstance.current) {
+        chartInstance.current.destroy(); // Destroy the previous chart instance
+      }
+
+      const ctx = chartContainer.current.getContext("2d");
+      chartInstance.current = new Chart(ctx, {
+        type: "polarArea",
+        data: data,
+        options: options,
+      });
+    }
+  }, []);
+
   return (
-    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515]'>
-      <div className='flex justify-center bg-[#1D1D1D] border border-white border-opacity-5 text-white  rounded-3xl p-5 items-center space-x-4'>
-        <div className='bg-gradient-to-r from-[#262626] to-[#171717] p-4 rounded-full border border-white border-opacity-10 shadow hover:from-[#ffffff] hover:to-[#8df2ff] cursor-pointer transition ease-linear duration-200 delay-100 font-medium hover:text-[#0A66C2]'>
-          <FaLinkedinIn size={24} />
-        </div>
-        <div className='bg-gradient-to-r from-[#262626] to-[#171717] p-4 rounded-full border border-white border-opacity-10 shadow hover:from-[#ffffff] hover:to-[#8df2ff] cursor-pointer transition ease-linear duration-200 delay-100 font-medium hover:text-black'>
-          <FaGithubAlt size={24} />
-        </div>
-        <div className='bg-gradient-to-r from-[#262626] to-[#171717] p-4 rounded-full border border-white border-opacity-10 shadow hover:from-[#ffffff] hover:to-[#8df2ff] cursor-pointer transition ease-linear duration-200 delay-100 font-medium hover:text-blue-500'>
-          <FaTwitter size={24} />
-        </div>
-      </div>
-      <div className='mt-7'>
-        <p className='text-xs uppercase font-medium text-[#8a8a8a] mb-2'>
-          Stay with me
-        </p>
-        <p className='text-2xl font-semibold text-white'>Profiles</p>
-      </div>
+    <div className='h-96 bg-gradient-to-r from-[#262626] to-[#151515] flex justify-center items-center rounded-3xl'>
+      <canvas ref={chartContainer} />
     </div>
   );
 };
 
-export default OptionalSection;
+export default PolarAreaChart;
