@@ -1,44 +1,8 @@
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const { color } = useSelector((state) => state.datas);
   const [showMenu, setShowMenu] = useState(false); // state to control menu visibility
-  const [activeSection, setActiveSection] = useState("");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      const scrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      let currentSection = "";
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (scrollPosition >= sectionTop - sectionHeight / 2) {
-          currentSection = section.getAttribute("id");
-        }
-      });
-
-      setActiveSection(currentSection);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <div className='max-w-6xl mx-auto'>
@@ -60,7 +24,6 @@ const Navbar = () => {
               className='h-6 w-6'
               fill='none'
               viewBox='0 0 24 24'
-              stroke={color}
             >
               <path
                 strokeLinecap='round'
@@ -82,16 +45,16 @@ const Navbar = () => {
         >
           <nav>
             <ul className='flex flex-col md:flex-row items-center md:space-x-16 space-y-5 md:space-y-0 md:text-md text-md font-medium cursor-pointer'>
-              <li className={`text-[#676767] hover:text-[${color}]`}>
+              <li className={`text-[#676767] `}>
                 <Link to='/'>Home</Link>
               </li>
-              <li className={`text-[#676767] hover:text-[${color}]`}>
+              <li className={`text-[#676767] `}>
                 <Link to='/projects'>Projects</Link>
               </li>
-              <li className={`text-[#676767] hover:text-[${color}]`}>
+              <li className={`text-[#676767] `}>
                 <Link to='/blogs'>Blogs</Link>
               </li>
-              <li className={`text-[#676767] hover:text-[${color}]`}>
+              <li className={`text-[#676767] `}>
                 <Link to='/contact'>Contact</Link>
               </li>
             </ul>

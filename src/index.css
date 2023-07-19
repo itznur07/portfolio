@@ -23,7 +23,6 @@ body {
 
 .bg-gradient-to-r {
   transition: background 0.5s ease;
-  animation: changeColors 5s linear infinite;
 }
 
 .bg-gradient-to-r:hover {

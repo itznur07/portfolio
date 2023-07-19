@@ -10,6 +10,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import About from "./Components/About";
 
 import MySkill from "./Components/MySkill";
+import Page from "./Pages/Blogs/Page";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
 import Protfolio from "./Pages/Porjects/Protfolio";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/blogs",
+        element: <Page></Page>,
       },
       {
         path: "/projects",
