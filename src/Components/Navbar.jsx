@@ -83,49 +83,16 @@ const Navbar = () => {
           <nav>
             <ul className='flex flex-col md:flex-row items-center md:space-x-16 space-y-5 md:space-y-0 md:text-md text-md font-medium cursor-pointer'>
               <li className={`text-[#676767] hover:text-[${color}]`}>
-                <a
-                  href='#home'
-                  className={activeSection === "section1" ? "active" : ""}
-                  onClick={() => scrollToSection("section1")}
-                >
-                  Home
-                </a>
+                <Link to='/'>Home</Link>
               </li>
               <li className={`text-[#676767] hover:text-[${color}]`}>
-                <a
-                  href='#about'
-                  className={activeSection === "section2" ? "active" : ""}
-                  onClick={() => scrollToSection("section2")}
-                >
-                  About
-                </a>
+                <Link to='/projects'>Projects</Link>
               </li>
               <li className={`text-[#676767] hover:text-[${color}]`}>
-                <a
-                  href='#skills'
-                  className={activeSection === "section3" ? "active" : ""}
-                  onClick={() => scrollToSection("section3")}
-                >
-                  Skills
-                </a>
+                <Link to='/blogs'>Blogs</Link>
               </li>
               <li className={`text-[#676767] hover:text-[${color}]`}>
-                <a
-                  href='#project'
-                  className={activeSection === "section4" ? "active" : ""}
-                  onClick={() => scrollToSection("section4")}
-                >
-                  Projects
-                </a>
-              </li>
-              <li className={`text-[#676767] hover:text-[${color}]`}>
-                <a
-                  href='#contact'
-                  className={activeSection === "section5" ? "active" : ""}
-                  onClick={() => scrollToSection("section5")}
-                >
-                  Contact
-                </a>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </nav>

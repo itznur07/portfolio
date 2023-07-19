@@ -6,7 +6,7 @@ import ScrollToTopButton from "./ScrollToTop";
 const Footer = () => {
   return (
     <>
-      <div className='container mx-auto  py-3  bg-gradient-to-r from-[#262626] to-[#171717]'>
+      <div className='container mx-auto mt-10  py-3  bg-gradient-to-r from-[#262626] to-[#171717]'>
         <div className='flex gap-x-5 items-center justify-between md:justify-between max-w-6xl mx-auto md:py-2'>
           {/* div 1 */}
           <div>
