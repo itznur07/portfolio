@@ -32,7 +32,7 @@ const Page = () => {
   ];
 
   return (
-    <div className='w-full h-full bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 md:mx-0 mx-5 relative group'>
+    <div className='w-full h-auto bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 md:mx-0 mx-5 relative group'>
       <div>
         <img
           src={personImg}
