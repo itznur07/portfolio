@@ -8,6 +8,7 @@ import {
   SiNextdotjs,
   SiTailwindcss,
 } from "react-icons/si";
+import icon from "../../assets/icon.svg";
 
 const Specialization = () => {
   const skills = [
@@ -15,7 +16,7 @@ const Specialization = () => {
     { toolName: "Next.JS", icon: <SiNextdotjs />, lavel: "Intermediate" },
     {
       toolName: "React",
-      icon: <FaReact className='animate-spin'/>,
+      icon: <FaReact className='animate-spin' />,
       lavel: "Intermediate",
     },
     { toolName: "Node.JS", icon: <FaNode />, lavel: "Intermediate" },
@@ -26,7 +27,7 @@ const Specialization = () => {
   ];
 
   return (
-    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515]'>
+    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515] relative group'>
       <div>
         <div className='grid grid-cols-12 gap-5'>
           {skills.map((skill) => (
@@ -45,6 +46,9 @@ const Specialization = () => {
           Specialization
         </p>
         <p className='text-2xl font-semibold text-white'>Skills</p>
+      </div>
+      <div className='absolute bottom-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
+        <img src={icon} alt='icon' />
       </div>
     </div>
   );

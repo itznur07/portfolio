@@ -1,9 +1,10 @@
 import React from "react";
+import icon from "../../assets/icon.svg";
 import personImg from "../../assets/person.png";
 
 const ProfileCard = () => {
   return (
-    <div className='bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 md:mx-0 mx-5'>
+    <div className='w-full h-full bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 md:mx-0 mx-5 relative group'>
       <div className='flex items-center space-x-6'>
         <div>
           <img
@@ -24,6 +25,9 @@ const ProfileCard = () => {
             A MERN stack developer with a passion for creating dynamic and
             user-friendly applications
           </p>
+        </div>
+        <div className="absolute bottom-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100">
+          <img src={icon} alt='icon' />
         </div>
       </div>
     </div>

@@ -59,7 +59,7 @@ const PolarAreaChart = () => {
   }, []);
 
   return (
-    <div className='h-96 bg-gradient-to-r from-[#262626] to-[#151515] flex justify-center items-center rounded-3xl'>
+    <div className='h-96 bg-gradient-to-r from-[#262626] to-[#151515] flex justify-center items-center rounded-3xl '>
       <canvas ref={chartContainer} />
     </div>
   );

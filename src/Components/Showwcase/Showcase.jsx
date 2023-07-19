@@ -1,9 +1,10 @@
 import React from "react";
+import icon from "../../assets/icon.svg";
 import myWork from "../../assets/my-works.png";
 
 const Showcase = () => {
   return (
-    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515]'>
+    <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515] relative group'>
       <div>
         <img src={myWork} alt='work-imag' className='p-1' />
       </div>
@@ -12,6 +13,9 @@ const Showcase = () => {
           Showcase
         </p>
         <p className='text-2xl font-semibold text-white'>Projects</p>
+      </div>
+      <div className='absolute bottom-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
+        <img src={icon} alt='icon' />
       </div>
     </div>
   );

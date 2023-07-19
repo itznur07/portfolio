@@ -14,7 +14,7 @@ const Banner = () => {
   // const { color } = useSelector((state) => state.datas);
 
   return (
-    <div className='max-w-6xl mx-auto my-10'>
+    <div className='max-w-6xl mx-auto my-10 md:px-0 px-3'>
       {/* hero1 here */}
       <div className='grid grid-cols-12 gap-5'>
         <div className='md:col-span-6 col-span-12'>
@@ -37,13 +37,13 @@ const Banner = () => {
       {/* hero1 ends here */}
       {/* hero2 here */}
       <div className='grid grid-cols-12 gap-5 mt-5'>
-        <div className='col-span-3'>
+        <div className='md:col-span-3 col-span-12'>
           <SocialProfile></SocialProfile>
         </div>
-        <div className='col-span-6'>
+        <div className='md:col-span-6 col-span-12'>
           <Specialization></Specialization>
         </div>
-        <div className='col-span-3'>
+        <div className='md:col-span-3 col-span-12'>
           <BlogCard></BlogCard>
         </div>
       </div>
@@ -51,11 +51,11 @@ const Banner = () => {
 
       {/* hero3 here */}
       <div className='grid grid-cols-12 mt-5 gap-5'>
-        <div className='col-span-6'>
+        <div className='md:col-span-6 col-span-12'>
           <WorkTogether></WorkTogether>
           <Greeting></Greeting>
         </div>
-        <div className='col-span-6'>
+        <div className='md:col-span-6 col-span-12'>
           <PolarAreaChart></PolarAreaChart>
         </div>
       </div>
