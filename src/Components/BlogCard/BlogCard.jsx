@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import blogImg from "../../assets/gfonts.png";
 import icon from "../../assets/icon.svg";
 
@@ -15,7 +16,9 @@ const BlogCard = () => {
         <p className='text-2xl font-semibold text-white'>Blogs</p>
       </div>
       <div className='absolute bottom-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
-        <img src={icon} alt='icon' />
+        <Link to='/blogs'>
+          <img src={icon} alt='icon' />
+        </Link>
       </div>
     </div>
   );
