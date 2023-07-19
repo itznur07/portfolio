@@ -1,5 +1,4 @@
 import React from "react";
-import MentionButton from "./MentionButton";
 
 // import icons
 import { useSelector } from "react-redux";
@@ -13,7 +12,7 @@ const MySkill = () => {
         <div className='md:flex items-center md:justify-between justify-center md:mx-0 h-auto md:space-y-0 space-y-10 md:space-x-20 md:py-0 py-5'>
           {/* div 1 */}
           <div className='md:ml-0 md:flex-none flex items-center justify-center'>
-            <MentionButton name='Skills' />
+  
           </div>
           {/* div 1 */}
           {/* div 2 */}

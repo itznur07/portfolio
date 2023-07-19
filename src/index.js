@@ -8,8 +8,9 @@ import Main from "./Layout/Main";
 import registerServiceWorker from "./registerServiceWorker";
 
 import About from "./Components/About";
-import Contact from "./Components/Contact";
+
 import MySkill from "./Components/MySkill";
+import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
 import Protfolio from "./Pages/Porjects/Protfolio";
 
