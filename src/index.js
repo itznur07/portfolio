@@ -7,9 +7,8 @@ import "./index.css";
 import Main from "./Layout/Main";
 import registerServiceWorker from "./registerServiceWorker";
 
-import About from "./Components/About";
-
 import MySkill from "./Components/MySkill";
+import About from "./Pages/About/About";
 import Page from "./Pages/Blogs/Page";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";

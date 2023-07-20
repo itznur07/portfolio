@@ -1,6 +1,6 @@
-import Page from "./CredentialProfile/Page";
-import Specialization from "./Specialization/Specialization";
-import WorkTogether from "./WorkTogether/WorkTogether";
+import Page from "../../Components/CredentialProfile/Page";
+import Specialization from "../../Components/Specialization/Specialization";
+import WorkTogether from "../../Components/WorkTogether/WorkTogether";
 
 const About = () => {
   return (
