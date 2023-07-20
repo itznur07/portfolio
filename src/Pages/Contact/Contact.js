@@ -1,4 +1,5 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { SiMaildotru } from "react-icons/si";
 import SocialProfile from "../../Components/SocialProfile/SocialProfile";
@@ -26,6 +27,20 @@ const Contact = () => {
       text: "Chittagong, Bangladesh",
     },
   ];
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+  const handleSubmitData = (data) => {
+    if (data) {
+      alert("Successfully send 🎊" );
+      reset();
+    }
+  };
 
   return (
     <>
@@ -68,24 +83,39 @@ const Contact = () => {
                   Let's work <span className='text-[#19beff]'>together.</span>
                 </p>
               </div>
-              <form className='md:mt-8 mt-14'>
+              <form
+                onSubmit={handleSubmit(handleSubmitData)}
+                className='md:mt-8 mt-14'
+              >
                 <div className='mt-2'>
                   <input
+                    {...register("name", {
+                      required: "name is required",
+                    })}
                     type='text'
+                    name='name'
                     placeholder='Name'
                     className='w-full p-3 md:p-4 bg-gradient-to-r from-[#2a2a2a] to-[#191919] outline-none rounded-lg text-white'
                   />
                 </div>
                 <div className='mt-2'>
                   <input
+                    {...register("email", {
+                      required: "email is required",
+                    })}
                     type='email'
+                    name='email'
                     placeholder='Email'
                     className='w-full p-3 md:p-4 bg-gradient-to-r from-[#2a2a2a] to-[#191919] outline-none rounded-lg text-white'
                   />
                 </div>
                 <div className='mt-2'>
                   <input
+                    {...register("subject", {
+                      required: "subject is required",
+                    })}
                     type='text'
+                    name='subject'
                     placeholder='Subject'
                     className='w-full p-3 md:p-4 bg-gradient-to-r from-[#2a2a2a] to-[#191919] outline-none rounded-lg text-white'
                   />
@@ -93,14 +123,18 @@ const Contact = () => {
                 <div className='mt-2'>
                   <textarea
                     rows={6}
+                    {...register("message", {
+                      required: "name is required",
+                    })}
                     type='text'
+                    name='message'
                     placeholder='Message'
                     className='w-full p-3 md:p-4 bg-gradient-to-r from-[#2a2a2a] to-[#191919] outline-none rounded-lg text-white'
                   />
                 </div>
                 <div className='mt-3'>
                   <button
-                    type='button'
+                    type='submit'
                     className='w-full px-5 py-2.5 md:py-3 md:text-xl text-[#fff] hover:text-[#000] bg-[#323232] hover:bg-[#f5f5f5] font-medium rounded-lg transition ease-linear duration-200 delay-75'
                   >
                     Submit
