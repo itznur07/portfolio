@@ -6,7 +6,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false); // state to control menu visibility
 
   return (
-    <div className='max-w-6xl md:mx-auto mx-2'>
+    <div className='max-w-6xl md:mx-auto mx-4'>
       <div className='md:flex md:flex-row items-center flex flex-col justify-between md:gap-y-0 gap-y-7 md:py-6 py-5'>
         {/* div 1 */}
         <div className='md:w-auto w-full md:flex md:justify-between  md:items-center flex justify-between items-center  '>
