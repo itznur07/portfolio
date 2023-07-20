@@ -4,7 +4,7 @@ import WorkTogether from "../../Components/WorkTogether/WorkTogether";
 
 const About = () => {
   return (
-    <div className='max-w-6xl md:mx-auto mx-10'>
+    <div className='max-w-6xl md:mx-auto mx-2'>
       <div className='grid md:grid-cols-12 gap-20 my-10'>
         <div className='md:col-span-4'>
           <Page></Page>

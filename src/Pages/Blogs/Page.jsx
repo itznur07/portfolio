@@ -43,7 +43,7 @@ const Page = () => {
   ];
   
   return (
-    <div className='max-w-6xl md:mx-auto mx-10 mb-16'>
+    <div className='max-w-6xl md:mx-auto mx-2 mb-16'>
       <div>
         <h1 className='text-center mt-10 text-3xl font-bold text-[#f5f5f5] uppercase'>
           All Blogs{" "}

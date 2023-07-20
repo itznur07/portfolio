@@ -40,7 +40,7 @@ const Protfolio = () => {
   ];
 
   return (
-    <div className='max-w-6xl md:mx-auto mx-10'>
+    <div className='max-w-6xl md:mx-auto mx-2'>
       <div className='mt-10'>
         <h1 className='text-7xl font-bold uppercase text-center text-[#f5f5f5]'>
           MY WORK
