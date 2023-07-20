@@ -41,9 +41,9 @@ const Page = () => {
       readtime: 5,
     },
   ];
-
+  
   return (
-    <div className='max-w-6xl mx-auto mb-16'>
+    <div className='max-w-6xl md:mx-auto mx-10 mb-16'>
       <div>
         <h1 className='text-center mt-10 text-3xl font-bold text-[#f5f5f5] uppercase'>
           All Blogs{" "}
@@ -60,30 +60,32 @@ const Page = () => {
         />
       </div>
 
-      <div className='grid grid-cols-3 gap-5 mt-10'>
+      {/* Updated grid layout for mobile devices */}
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10'>
         {blogs.map((blog) => (
-          <div className='relative group rounded-3xl p-5 bg-gradient-to-r from-[#262626] to-[#151515] '>
-            <div key={blog.id}>
-              <img
-                src={blog.cover}
-                alt='cover'
-                className='rounded-3xl object-cover w-full h-56 mt-5'
-              />
-              <div className='mt-8'>
-                <h1 className='text-md font-semibold text-white '>
-                  {blog.title}
-                </h1>
-                <p className='mt-3 text-sm text-[#f8f8f8] leading-snug'>
-                  {blog.content.slice(0, 100)}
-                </p>
-                <div className='flex items-center justify-between mt-5'>
-                  <span className=' text-white font-medium flex items-center space-x-2'>
-                    <FaClock size={24} />
-                    <p>{blog.readtime} min</p>
-                  </span>
-                  <div className='cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
-                    <img src={icon} alt='icon' />
-                  </div>
+          <div
+            className='relative group rounded-3xl p-5 bg-gradient-to-r from-[#262626] to-[#151515] mb-8 md:mb-0'
+            key={blog.id}
+          >
+            <img
+              src={blog.cover}
+              alt='cover'
+              className='rounded-3xl object-cover w-full h-56 mt-5'
+            />
+            <div className='mt-8'>
+              <h1 className='text-md font-semibold text-white '>
+                {blog.title}
+              </h1>
+              <p className='mt-3 text-sm text-[#f8f8f8] leading-snug'>
+                {blog.content.slice(0, 100)}
+              </p>
+              <div className='flex items-center justify-between mt-5'>
+                <span className='text-white font-medium flex items-center space-x-2'>
+                  <FaClock size={24} />
+                  <p>{blog.readtime} min</p>
+                </span>
+                <div className='cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
+                  <img src={icon} alt='icon' />
                 </div>
               </div>
             </div>

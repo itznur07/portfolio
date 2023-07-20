@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className='container mx-auto mt-10  py-3  bg-gradient-to-r from-[#262626] to-[#171717]'>
-        <div className='flex gap-x-5 items-center justify-between md:justify-between max-w-6xl mx-auto md:py-2'>
+        <div className='flex gap-x-5 items-center justify-between md:justify-between max-w-6xl md:mx-auto md:py-2 mx-10'>
           {/* div 1 */}
           <div>
             <h1 className='text-xl font-bold text-white'>NUR.</h1>
