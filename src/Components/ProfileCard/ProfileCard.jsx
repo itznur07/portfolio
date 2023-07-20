@@ -7,12 +7,12 @@ const ProfileCard = () => {
   return (
     <>
       <Link to='/about'>
-        <div className='w-full h-full bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 md:mx-0 mx-5 relative group'>
-          <div className='flex items-center space-x-6'>
+        <div className='w-full h-full bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 relative group'>
+          <div className='flex md:flex-row flex-col items-center md:space-x-6 space-y-3'>
             <div>
               <img
                 src={personImg}
-                className='rounded-tl-3xl rounded-br-3xl border border-[#8a8a8a]'
+                className='md:rounded-tl-3xl md:rounded-br-3xl rounded-3xl border border-[#8a8a8a]'
                 alt='personmage'
               />
             </div>
@@ -20,7 +20,7 @@ const ProfileCard = () => {
               <p className='text-md uppercase font-medium text-[#8a8a8a]'>
                 A MERN Stack Developer
               </p>
-              <span className='text-4xl text-white font-semibold'>
+              <span className='md:text-4xl text-3xl text-white font-semibold'>
                 <p>Nur</p>
                 <p>Uddin.</p>
               </span>
@@ -29,7 +29,7 @@ const ProfileCard = () => {
                 user-friendly applications
               </p>
             </div>
-            <div className='absolute bottom-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
+            <div className='absolute md:bottom-5 bottom-24 md:right-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
               <Link to='/about'>
                 <img src={icon} alt='icon' />
               </Link>

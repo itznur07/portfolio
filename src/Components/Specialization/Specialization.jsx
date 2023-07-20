@@ -32,7 +32,7 @@ const Specialization = () => {
         <div className='grid grid-cols-12 gap-5'>
           {skills.map((skill) => (
             <div
-              className='col-span-3 flex items-center space-x-1 bg-gradient-to-r from-[#262626] hover:from-[#ffffff] hover:to-[#8df2ff] cursor-pointer transition ease-linear duration-200 delay-100 font-medium hover:text-black p-2 rounded-3xl border border-white border-opacity-10 text-white'
+              className='md:col-span-3 col-span-4 flex items-center space-x-1 bg-gradient-to-r from-[#262626] hover:from-[#ffffff] hover:to-[#8df2ff] cursor-pointer transition ease-linear duration-200 delay-100 font-medium hover:text-black p-2 rounded-3xl border border-white border-opacity-10 text-white'
               key={skill.toolName}
             >
               <span className='text-md'>{skill.icon}</span>

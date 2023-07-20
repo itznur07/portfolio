@@ -11,51 +11,57 @@ import Greeting from "./WellCome/Greeting";
 import WorkTogether from "./WorkTogether/WorkTogether";
 
 const Banner = () => {
-  // const { color } = useSelector((state) => state.datas);
 
   return (
-    <div className='max-w-6xl mx-auto my-10 md:px-0 px-3'>
+    <div className='max-w-6xl md:mx-auto my-10 mx-10'>
       {/* hero1 here */}
-      <div className='grid grid-cols-12 gap-5'>
-        <div className='md:col-span-6 col-span-12'>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
+        <div className='md:col-span-1 col-span-1'>
           <ProfileCard></ProfileCard>
         </div>
-        <div className='md:col-span-6 col-span-12'>
-          <div className='col-span-6'>
-            <MarqueeCard></MarqueeCard>
-          </div>
-          <div className='grid grid-cols-6 mt-5 gap-x-5 '>
-            <div className='col-span-3'>
-              <CredenticalCard></CredenticalCard>
+        <div className='md:col-span-1 col-span-1'>
+          <div className='md:grid md:grid-cols-2 grid-cols-1 md:mt-0 mt-5 gap-5'>
+            <div className='md:col-span-1 col-span-1'>
+              <MarqueeCard></MarqueeCard>
             </div>
-            <div className='col-span-3'>
-              <Showcase></Showcase>
+            <div className='md:col-span-1 col-span-1'>
+              <div className='grid md:grid-cols-2 grid-cols-1 mt-5 gap-5'>
+                <div className='md:col-span-1 col-span-1'>
+                  <CredenticalCard></CredenticalCard>
+                </div>
+                <div className='md:col-span-1 col-span-1'>
+                  <Showcase></Showcase>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       {/* hero1 ends here */}
+
       {/* hero2 here */}
-      <div className='grid grid-cols-12 gap-5 mt-5'>
-        <div className='md:col-span-3 col-span-12'>
+      <div className='grid md:grid-cols-3 grid-cols-1 mt-5 gap-5'>
+        <div className='md:col-span-1 col-span-1'>
           <SocialProfile></SocialProfile>
         </div>
-        <div className='md:col-span-6 col-span-12'>
+        <div className='md:col-span-1 col-span-1'>
           <Specialization></Specialization>
         </div>
-        <div className='md:col-span-3 col-span-12'>
+        <div className='md:col-span-1 col-span-1'>
           <BlogCard></BlogCard>
         </div>
       </div>
       {/* hero2 ends here */}
 
       {/* hero3 here */}
-      <div className='grid grid-cols-12 mt-5 gap-5'>
-        <div className='md:col-span-6 col-span-12'>
+      <div className='grid md:grid-cols-2 grid-cols-1 mt-5 gap-5'>
+        <div className='md:col-span-1 col-span-1'>
           <WorkTogether></WorkTogether>
+        </div>
+        <div className='md:col-span-1 col-span-1 md:block hidden'>
           <Greeting></Greeting>
         </div>
-        <div className='md:col-span-6 col-span-12'>
+        <div className='md:col-span-1 col-span-1'>
           <PolarAreaChart></PolarAreaChart>
         </div>
       </div>
