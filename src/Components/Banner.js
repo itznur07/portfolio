@@ -12,7 +12,7 @@ import WorkTogether from "./WorkTogether/WorkTogether";
 
 const Banner = () => {
   return (
-    <div className='max-w-6xl md:mx-auto my-10 mx-10'>
+    <div className='max-w-6xl md:mx-auto my-10 mx-5'>
       {/* hero1 here */}
       <div className='grid md:grid-cols-12 grid-cols-1 gap-5'>
         <div className='md:col-span-6 col-span-1'>
