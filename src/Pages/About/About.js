@@ -4,12 +4,12 @@ import WorkTogether from "../../Components/WorkTogether/WorkTogether";
 
 const About = () => {
   return (
-    <div className='max-w-6xl mx-auto'>
-      <div className='grid grid-cols-12 gap-20 my-10'>
-        <div className='col-span-4'>
+    <div className='max-w-6xl md:mx-auto mx-10'>
+      <div className='grid md:grid-cols-12 gap-20 my-10'>
+        <div className='md:col-span-4'>
           <Page></Page>
         </div>
-        <div className='col-span-8'>
+        <div className='md:col-span-8'>
           {/* about info */}
           <div>
             <h1 className='text-2xl font-semibold text-[#f5f5f5] uppercase'>
