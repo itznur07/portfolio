@@ -48,6 +48,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className={`text-[#676767] `}>
+                <Link to='/about' onClick={() => setShowMenu(false)}>
+                  About
+                </Link>
+              </li>
+              <li className={`text-[#676767] `}>
                 <Link to='/contact' onClick={() => setShowMenu(false)}>
                   Contact
                 </Link>
