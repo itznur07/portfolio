@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { FaHamburger, FaWindowClose } from "react-icons/fa";
+import { FaBars, FaWindowClose } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false); // state to control menu visibility
 
   return (
-    <div className='max-w-6xl md:mx-auto mx-24'>
+    <div className='max-w-6xl md:mx-auto mx-10'>
       <div className='md:flex md:flex-row items-center flex flex-col justify-between md:gap-y-0 gap-y-7 md:py-6 py-5'>
         {/* div 1 */}
-        <div className='flex justify-between md:space-x-0 space-x-96 items-center'>
+        <div className='md:w-auto w-full md:flex md:justify-between  md:items-center flex justify-between items-center  '>
           <Link to='/'>
             <span className='text-5xl font-bold shadow-inner text-[#f5f5f5] rounded-full'>
               NUR.
@@ -20,7 +20,7 @@ const Navbar = () => {
             className='md:hidden cursor-pointer text-white'
             onClick={() => setShowMenu(!showMenu)}
           >
-            {showMenu ? <FaHamburger /> : <FaWindowClose />}
+            {showMenu ? <FaWindowClose size={24} /> : <FaBars size={24} />}
           </div>
         </div>
         {/* div 1 */}
@@ -31,7 +31,7 @@ const Navbar = () => {
           } md:flex md:items-center justify-between md:mt-0 mt-4`}
         >
           <nav>
-            <ul className='flex flex-col md:flex-row items-center md:space-x-16 space-y-5 md:space-y-0 md:text-md text-md font-medium cursor-pointer'>
+            <ul className='flex flex-col md:flex-row items-center md:space-x-16 space-y-5 md:space-y-0 md:text-md text-md font-medium cursor-pointer '>
               <li className={`text-[#676767] `}>
                 <Link to='/' onClick={() => setShowMenu(false)}>
                   Home
