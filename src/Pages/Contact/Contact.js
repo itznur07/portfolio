@@ -36,10 +36,20 @@ const Contact = () => {
   } = useForm();
 
   const handleSubmitData = (data) => {
-    if (data) {
-      alert("Successfully send 🎊" );
-      reset();
-    }
+    fetch("https://server-one-kohl.vercel.app/contacts", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          alert("message send successfully 🎊");
+          reset();
+        }
+      });
   };
 
   return (
