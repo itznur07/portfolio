@@ -29,6 +29,16 @@ body {
   background-position: right;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#animate-spin {
+  animation: spin 4s linear infinite;
+}
+
 /* .bg-gradient-to-r {
 } */
 

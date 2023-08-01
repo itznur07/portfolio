@@ -28,12 +28,7 @@ const Contact = () => {
     },
   ];
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const handleSubmitData = (data) => {
     fetch("https://server-one-kohl.vercel.app/contacts", {
