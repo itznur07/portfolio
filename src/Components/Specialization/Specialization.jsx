@@ -1,29 +1,28 @@
 import React from "react";
-import { FaNode, FaReact } from "react-icons/fa";
+import { FaAppStoreIos, FaNode, FaReact } from "react-icons/fa";
 import {
   SiExpress,
   SiFirebase,
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
-  SiTailwindcss,
 } from "react-icons/si";
 import icon from "../../assets/icon.svg";
 
 const Specialization = () => {
   const skills = [
     { toolName: "Javascript", icon: <SiJavascript />, lavel: "Intermediate" },
-    { toolName: "Next.JS", icon: <SiNextdotjs />, lavel: "Intermediate" },
     {
-      toolName: "React",
+      toolName: "React.JS",
       icon: <FaReact className='animate-spin' />,
       lavel: "Intermediate",
     },
+    { toolName: "Next.JS", icon: <SiNextdotjs />, lavel: "Intermediate" },
+    { toolName: "R.Native", icon: <FaAppStoreIos />, lavel: "Advanced" },
     { toolName: "Node.JS", icon: <FaNode />, lavel: "Intermediate" },
     { toolName: "ExpressJS", icon: <SiExpress />, lavel: "Intermediate" },
     { toolName: "MongoDB", icon: <SiMongodb />, lavel: "Intermediate" },
     { toolName: "Firebase", icon: <SiFirebase />, lavel: "Intermediate" },
-    { toolName: "Tailwind", icon: <SiTailwindcss />, lavel: "Advanced" },
   ];
 
   return (
