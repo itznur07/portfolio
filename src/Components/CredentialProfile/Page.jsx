@@ -32,7 +32,6 @@ const Page = () => {
   ];
 
   return (
-    
     <div className='w-full h-auto bg-gradient-to-r from-[#262626] to-[#151515]  rounded-3xl p-10 relative group'>
       <div>
         <img

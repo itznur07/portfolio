@@ -25,8 +25,8 @@ const ProfileCard = () => {
                 <p>Uddin.</p>
               </span>
               <p className='capitalize text-sm font-medium text-[#8a8a8a]'>
-                A MERN Stack & Apps developer with a passion for creating dynamic and
-                user-friendly applications.
+                A MERN Stack & Apps developer with a passion for creating
+                dynamic and user-friendly applications.
               </p>
             </div>
             <div className='absolute md:bottom-5 bottom-24 md:right-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>

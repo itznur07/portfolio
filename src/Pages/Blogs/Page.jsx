@@ -41,7 +41,7 @@ const Page = () => {
       readtime: 5,
     },
   ];
-  
+
   return (
     <div className='max-w-6xl md:mx-auto mx-2 mb-16'>
       <div>
@@ -60,7 +60,6 @@ const Page = () => {
         />
       </div>
 
-      {/* Updated grid layout for mobile devices */}
       <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10'>
         {blogs.map((blog) => (
           <div
