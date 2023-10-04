@@ -8,7 +8,7 @@ const Page = () => {
     {
       id: 1,
       icon: <FaLinkedinIn size={20} />,
-      url: "https://www.linkedin.com/in/itznur07/",
+      url: "https://www.linkedin.com/in/itsnur07/",
       hcolor: "hover:text-[#0A66C2]",
     },
     {
