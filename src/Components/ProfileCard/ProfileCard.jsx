@@ -18,7 +18,7 @@ const ProfileCard = () => {
             </div>
             <div className='flex flex-col space-y-2'>
               <p className='text-md uppercase font-medium text-[#8a8a8a]'>
-                A MERN Stack Developer
+                A MERN/React Native Developer
               </p>
               <span className='md:text-4xl text-3xl text-white font-semibold'>
                 <p>Nur</p>
@@ -26,7 +26,8 @@ const ProfileCard = () => {
               </span>
               <p className='capitalize text-sm font-medium text-[#8a8a8a]'>
                 A MERN Stack & Apps developer with a passion for creating
-                dynamic and user-friendly applications.
+                dynamic and user-friendly applications. I try to learning
+                (DevObs)
               </p>
             </div>
             <div className='absolute md:bottom-5 bottom-24 md:right-5 right-5 cursor-pointer opacity-40 group-hover:opacity-100 transition-all ease-linear duration-200 delay-100'>
