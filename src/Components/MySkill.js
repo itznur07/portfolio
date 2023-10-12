@@ -14,7 +14,6 @@ const MySkill = () => {
           <div className='md:ml-0 md:flex-none flex items-center justify-center'>
   
           </div>
-          {/* div 1 */}
           {/* div 2 */}
           <div className='md:space-y-10'>
             <div className='flex flex-wrap md:justify-start justify-center gap-10 md:mx-0 mx-16 md:mt-0 mt-10'>
