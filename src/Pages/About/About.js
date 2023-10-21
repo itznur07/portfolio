@@ -10,7 +10,7 @@ const About = () => {
           <Page></Page>
         </div>
         <div className='md:col-span-8'>
-          {/* about info */}
+          {/* about info */} - updated
           <div>
             <h1 className='text-2xl font-semibold text-[#f5f5f5] uppercase'>
               About me
