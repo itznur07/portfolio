@@ -10,7 +10,7 @@ const About = () => {
           <Page></Page>
         </div>
         <div className='md:col-span-8'>
-          {/* about info */} - update ui 
+          {/* about info */} - update ui
           <div>
             <h1 className='text-2xl font-semibold text-[#f5f5f5] uppercase'>
               About me
@@ -37,7 +37,7 @@ const About = () => {
           <div>
             <WorkTogether></WorkTogether>
           </div>
-          {/* about info */}
+          {/* about info end here*/}
         </div>
       </div>
     </div>
