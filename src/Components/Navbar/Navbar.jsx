@@ -66,7 +66,7 @@ const Navbar = () => {
           className={`${showMenu ? "block" : "hidden"} md:block mt-5 md:mt-0`}
         >
           <a
-            href='https://docs.google.com/document/d/1jT26XSVIejehV8QuRgt8-JX_E5EcCeXK09SSB6Koyag/edit?usp=sharing'
+            href='https://drive.google.com/file/d/1-skp_kHpV30aCxrugwwAXXrvLQI5luz7/view?usp=sharing'
             target='_blank'
             rel='noreferrer'
             className='px-5 py-2.5 text-[#fff] hover:text-[#000] bg-[#323232] hover:bg-[#f5f5f5] font-medium rounded-lg transition ease-linear duration-200 delay-75'
