@@ -73,15 +73,6 @@ const Page = () => {
 
   return (
     <div className='max-w-6xl md:mx-auto mx-2 mb-16'>
-      {/* service search bar */}
-      <div className='flex justify-center mt-14 max-w-2xl mx-auto'>
-        <input
-          type='text'
-          placeholder='Search...'
-          className='border-[#2A2A2A] border rounded-lg w-full py-3 px-8 bg-gradient-to-r from-[#2a2a2a] to-[#191919] outline-none  text-white'
-        />
-      </div>
-
       {/* service navbar */}
       <div className='flex items-center justify-between mt-24'>
         <div>
