@@ -6,12 +6,12 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false); // state to control menu visibility
 
   return (
-    <div className='max-w-6xl md:mx-auto mx-4 z-50 '>
+    <div className='max-w-7xl md:mx-auto mx-4 z-50  '>
       <div className='md:flex md:flex-row items-center flex flex-col justify-between md:gap-y-0 gap-y-7 md:py-6 py-5'>
         {/* div 1 */}
         <div className='md:w-auto w-full md:flex md:justify-between  md:items-center flex justify-between items-center  '>
           <Link to='/'>
-            <span className='text-5xl font-bold shadow-inner text-[#f5f5f5] rounded-full'>
+            <span className='text-4xl font-bold shadow-inner text-[#f5f5f5] rounded-full'>
               NUR.
             </span>
           </Link>
@@ -69,10 +69,10 @@ const Navbar = () => {
             href='https://drive.google.com/file/d/1-skp_kHpV30aCxrugwwAXXrvLQI5luz7/view?usp=sharing'
             target='_blank'
             rel='noreferrer'
-            className='px-5 py-2.5 text-[#fff] hover:text-[#000] bg-[#323232] hover:bg-[#f5f5f5] font-medium rounded-lg transition ease-linear duration-200 delay-75'
+            className='px-4 py-2   text-[#000] bg-[#fff]  font-bold rounded-lg transition ease-linear duration-200 delay-75'
             onClick={() => setShowMenu(false)}
           >
-            Resume
+            Hire Me
           </a>
         </div>
         {/* div 3 */}
