@@ -7,7 +7,7 @@ const BlogCard = () => {
   return (
     <>
       <Link to='/services'>
-        <div className='rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515] relative group'>
+        <div className='h-full w-full rounded-3xl py-10 px-6 bg-gradient-to-r from-[#262626] to-[#151515] relative group '>
           <div className='flex items-center justify-center'>
             <img width={165} src={blogImg} alt='blogImage' className='p-1' />
           </div>
