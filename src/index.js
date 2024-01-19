@@ -9,6 +9,7 @@ import registerServiceWorker from "./registerServiceWorker";
 
 import MySkill from "./Components/MySkill";
 import About from "./Pages/About/About";
+import Animation from "./Pages/Animation/Animation";
 import Page from "./Pages/Blogs/Page";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/skills",
         element: <MySkill></MySkill>,
+      },
+      {
+        path: "/animation",
+        element: <Animation></Animation>,
       },
     ],
   },
